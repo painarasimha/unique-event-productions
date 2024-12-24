@@ -4,5 +4,9 @@
 	let { children } = $props();
 </script>
 
-<SiteHeader />
-{@render children()}
+<div class="relative">
+	<SiteHeader />
+	<div class="absolute top-0 flex min-h-screen w-screen pt-14">
+		{@render children()}
+	</div>
+</div>
