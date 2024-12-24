@@ -1,9 +1,9 @@
+@import '@fontsource-variable/playfair-display';
+@import '@fontsource-variable/outfit';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import '@fontsource-variable/playfair-display';
-@import '@fontsource-variable/outfit';
 
 @layer base {
 	:root {
