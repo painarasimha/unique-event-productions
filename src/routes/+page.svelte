@@ -1,12 +1,16 @@
 <script lang="ts">
-	import banner from '$lib/assets/hero-banner.mp4';
+	import { env } from '$env/dynamic/public';
+	/* import banner from '$lib/assets/hero-banner.mp4'; */
 	import Button from '$lib/components/ui/button/button.svelte';
+
+	/* const cloudname = import.meta.env.VITE_CLOUDINARY_CLOUD_NAME; */
+	const videoUrl = `https://res.cloudinary.com/db56favi8/video/upload/v1735058342/unique-event-productions/banner-video.mp4`
 </script>
 
 <div class="flex min-h-full w-full flex-col">
 	<!-- Hero Banner Video SECTION -->
 	<!-- TODO : Use cloudinary to store video -->
-	<video src={banner} aria-label="banner-video" loop muted autoplay class="min-h-[50%] object-cover"
+	<video src={videoUrl} aria-label="banner-video" loop muted autoplay class="min-h-[50%] object-cover"
 		><track kind="captions" /></video
 	>
 
