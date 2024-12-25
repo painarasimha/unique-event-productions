@@ -18,7 +18,7 @@
 
 	<!-- Texts SECTION -->
 	<div class="flex h-full flex-col items-center justify-center gap-4 p-4 md:h-[40%]">
-		<div class="text-center font-serif text-[1.7rem]">Crafting Unforgettable Experiences</div>
+		<div class="text-center font-serif text-3xl">Crafting Unforgettable Experiences</div>
 		<div class="px-2 text-center">
 			At <span class="font-black text-primary">Unique Event Productions</span>, we bring your dreams
 			to life with precision, creativity & passion.
