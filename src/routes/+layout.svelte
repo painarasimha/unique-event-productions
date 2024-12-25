@@ -6,7 +6,7 @@
 
 <div class="relative">
 	<SiteHeader />
-	<div class="absolute top-0 flex min-h-screen w-screen pt-14">
+	<div class="absolute top-0 flex min-h-[100dvh] w-screen pt-14">
 		{@render children()}
 	</div>
 </div>
