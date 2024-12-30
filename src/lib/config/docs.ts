@@ -19,8 +19,8 @@ export const docsConfig: DocsConfig = {
 			href: '/services'
 		},
 		{
-			title: 'Portfolio',
-			href: '/portfolio'
+			title: 'Our Work',
+			href: '/our-work'
 		},
 		{
 			title: 'Contact Us',
