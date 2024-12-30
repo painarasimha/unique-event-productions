@@ -1,0 +1,28 @@
+<script lang="ts">
+	export let service: {
+		id: number;
+		title: string;
+		shortDesc: string;
+		imageUrl: string;
+		link: string;
+	};
+</script>
+
+<div class="overflow-hidden rounded-lg shadow-lg">
+		<div class="relative h-full">
+			<div class="absolute inset-0 bg-white">
+				<img
+					src={service.imageUrl}
+					alt={service.title}
+					class="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
+				/>
+			</div>
+			<div
+				class="relative flex h-max flex-col justify-end bg-card/40 p-6 transition-colors hover:bg-card/50"
+			>
+				<h3 class="mb-2 text-2xl font-bold text-foreground">{service.title}</h3>
+				<p class="text-foreground/90">{service.shortDesc}</p>
+			</div>
+		</div>
+	</div>
+
