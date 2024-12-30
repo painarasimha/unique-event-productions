@@ -1,73 +1,55 @@
 <script>
-	import ServiceCard from '$lib/components/serviceCard.svelte';
-  const cloudname = import.meta.env.VITE_CLOUDINARY_CLOUD_NAME;
-
+	import DesktopServiceGrid from '$lib/components/services/desktop-service-grid.svelte';
+	import MobileServiceGrid from '$lib/components/services/mobile-service-grid.svelte';
+	import ServiceCard from '$lib/components/services/serviceCard.svelte';
+	const cloudname = import.meta.env.VITE_CLOUDINARY_CLOUD_NAME;
 	const services = [
 		{
+			id: 1,
 			title: 'Wedding Planner',
-			description: 'Strategic consulting services for business growth',
-			imageUrl: ``
-
+			shortDesc: 'Strategic consulting services for business growth',
+			imageUrl: ``,
+			link: '/service/1'
 		},
 		{
+			id: 2,
 			title: 'Concerts & Live Shows',
-			description: 'Digital transformation solutions',
-			imageUrl: ``
+			shortDesc: 'Digital transformation solutions',
+			imageUrl: ``,
+			link: '/service/2'
 		},
 		{
+			id: 3,
 			title: 'Corporate Events',
-			description: 'Custom software development',
-			imageUrl: ``
+			shortDesc: 'Custom software development',
+			imageUrl: ``,
+			link: '/service/3'
 		},
 		{
+			id: 4,
 			title: 'Exhibition & Trade Shows',
-			description: 'Cloud infrastructure management',
-			imageUrl: ``
+			shortDesc: 'Cloud infrastructure management',
+			imageUrl: ``,
+			link: '/service/4'
 		},
 		{
+			id: 5,
 			title: 'Social Parties',
-			description: 'Data analytics and insights',
-			imageUrl: ``
+			shortDesc: 'Data analytics and insights',
+			imageUrl: ``,
+			link: '/service/5'
 		},
-    {
+		{
+			id: 6,
 			title: 'Festival & Cultural Events',
-			description: 'Data analytics and insights',
-			imageUrl: ``
+			shortDesc: 'Data analytics and insights',
+			imageUrl: ``,
+			link: '/service/6'
 		}
 	];
 </script>
 
-<div class='container mx-auto px-4 py-6'>
-  <div class="grid grid-cols-12 grid-rows-6 gap-4 ">
-    
-    <!-- Wedding Planner -->
-    <div class="col-span-8 col-start-2 col-end-10 md:col-span-8 md:row-span-2">
-      <ServiceCard {...services[0]} />
-    </div>
-    
-    <!-- Concert & Live Shows -->
-    <div class="col-span-8 col-start-2 col-end-10 md:col-span-4 md:row-span-4">
-      <ServiceCard {...services[1]} />
-    </div>
-    
-    <!-- Corporate Events -->
-    <div class="col-span-8 col-start-2 col-end-10 md:col-span-4 md:row-span-2">
-      <ServiceCard {...services[2]} />
-    </div>
-    
-    <!-- Exhibition & Trade Shows -->
-    <div class="col-span-8 col-start-2 col-end-10 md:col-span-4 md:row-span-2">
-      <ServiceCard {...services[3]} />
-    </div>
-    
-    <!-- Social Parties -->
-    <div class="col-span-8 col-start-2 col-end-10 md:col-span-6 md:row-span-2">
-      <ServiceCard {...services[4]} />
-    </div>
-    
-    <!-- Festivals & Cultural Events -->
-    <div class="col-span-8 col-start-2 col-end-10 md:col-span-6 md:row-span-2">
-      <ServiceCard {...services[5]} />
-    </div>
-  </div>
+<div class="flex max-w-screen-2xl items-center mx-auto px-4 py-6 md:container">
+	<MobileServiceGrid {services} />
+	<DesktopServiceGrid {services} />
 </div>
