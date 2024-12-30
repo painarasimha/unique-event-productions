@@ -1,6 +1,7 @@
 <script lang="ts">
 	import MobileLink from './mobile-link.svelte';
-	import { Menu, Globe } from 'lucide-svelte';
+	import { Menu } from 'lucide-svelte';
+	import Logo from '$lib/assets/Primary Logo.png'
 	import * as Sheet from '../ui/sheet/index.ts';
 	import Button from '../ui/button/button.svelte';
 	import ScrollArea from '../ui/scroll-area/scroll-area.svelte';
@@ -11,8 +12,7 @@
 
 <!-- Mobile Nav -->
 <div class="flex w-full items-center justify-between px-4 md:hidden">
-	<!-- TODO : Replace below company logo -->
-	<Globe />
+	<img src={Logo} alt="logo-img" class="w-8 h-8">
 
 	<Sheet.Root bind:open>
 		<Sheet.Trigger asChild let:builder>
