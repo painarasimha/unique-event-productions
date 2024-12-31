@@ -5,7 +5,7 @@
 	const cloudname = import.meta.env.VITE_CLOUDINARY_CLOUD_NAME;
 	const services = [
 		//TODO Change all the details and information of each services
-		//TODO Fix the Bento Grid Layout of the 2nd Box
+		//TODO Fix the Bento Grid Layout of the 2nd Box & use tilt js
 		{
 			id: 1,
 			title: 'Wedding Planner',
@@ -51,7 +51,8 @@
 	];
 </script>
 
-<div class="flex max-w-screen-2xl items-center mx-auto px-4 py-6 md:container">
+<div class="mx-auto flex max-w-screen-2xl flex-col px-4 py-6 md:container">
+	<h1 class="mb-5 text-center font-serif text-2xl font-bold text-primary md:text-5xl">Services</h1>
 	<MobileServiceGrid {services} />
 	<DesktopServiceGrid {services} />
 </div>

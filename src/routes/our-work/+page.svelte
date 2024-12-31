@@ -35,4 +35,7 @@
   ];
 </script>
 
-<OurWork items={workItems} />
+<div class="mx-auto flex max-w-screen-2xl flex-col px-4 py-6 md:container">
+  <h1 class="mb-5 text-center font-serif text-2xl font-bold text-primary md:text-5xl">Our Work</h1>
+  <OurWork items={workItems} />
+</div>

@@ -7,7 +7,7 @@
 	<!-- Hero Section -->
 	<section class="relative bg-background text-foreground">
 		<div class="container mx-auto px-8 py-8 md:px-14 md:py-14">
-			<h1 class="mx-auto mb-5 text-center text-2xl font-serif text-primary font-bold md:text-5xl">About Us</h1>
+			<h1 class="mx-auto mb-5 text-center text-2xl font-serif text-primary font-semibold md:text-5xl">About Us</h1>
 			<p class="mx-auto max-w-2xl font-sans text-sm text-justify md:text-xl">
 				At <span class="text-primary font-semibold">Unique Event Productions</span>, we transform ordinary occasions into extraordinary memories.
 				Since our inception, we've been the driving force behind countless successful events across
