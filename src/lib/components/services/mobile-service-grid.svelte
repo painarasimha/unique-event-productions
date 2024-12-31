@@ -10,7 +10,7 @@
 	}[];
 </script>
 
-<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:hidden lg:grid-cols-3 xl:grid-cols-4">
+<div class="flex flex-col gap-8 md:hidden">
 	{#each services as service (service.id)}
 		<ServiceCard {service} />
 	{/each}
