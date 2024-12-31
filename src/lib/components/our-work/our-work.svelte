@@ -1,31 +1,59 @@
 <script lang="ts">
 	import WorkCard from './work-card.svelte';
 	import type { WorkItem } from '$lib/types/our-work.ts';
-  import Button from '../ui/button/button.svelte';
+	/* import Button from '../ui/button/button.svelte'; */
+	import * as Select from '$lib/components/ui/select/index.ts';
+	import * as Tabs from '$lib/components/ui/tabs/index.ts';
+	import { Content, Root } from '../ui/sheet/index.ts';
+	import { Item } from '../ui/accordion/index.ts';
 
 	export let items: WorkItem[];
-	export let selectedCategory: string = 'All';
+	export let selectedCategory: string | undefined = 'All';
 
+	// Get unique categories
+	$: categories = ['All', ...new Set(items.map((item) => item.category))];
+
+	// Filtered items based on selected category
 	$: filteredItems =
 		selectedCategory === 'All' ? items : items.filter((item) => item.category === selectedCategory);
-
-	$: categories = ['All', ...new Set(items.map((item) => item.category))];
 </script>
 
 <div class="container mx-auto px-4 py-8">
-	<div class="flex flex-wrap gap-2 mb-8">
-		{#each categories as category}
-			<Button
-      variant={selectedCategory === category ? "outline" : "ghost"}
-      on:click={() => selectedCategory = category}
-      class="bg-background/30 hover:bg-secondary/10 text-foreground"
-      >
-				{category}
-  </Button>
-		{/each}
+	<!-- Mobile Layout-(Select Component) -->
+	<div class="mb-8 w-full max-w-[250px] md:hidden">
+		<Select.Root bind:value={selectedCategory}> <!-- TODO Fix this bind issue-->
+			<Select.Trigger class="w-full">
+				<Select.Value placeholder="Select Category" />
+			</Select.Trigger>
+			<Select.Content>
+				{#each categories as category}
+					<Select.Item value={category}>
+						{category}
+					</Select.Item>
+				{/each}
+			</Select.Content>
+		</Select.Root>
 	</div>
 
-	<div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+	<!-- Desktop Layout-(Tabs Component)-->
+	<div class="hidden place-self-end md:block">
+		<Tabs.Root
+			value={selectedCategory}
+			onValueChange={(value) => (selectedCategory = value)}
+			class="w-full"
+		>
+			<Tabs.List class="mb-8 flex h-auto flex-wrap bg-background/30">
+				{#each categories as category}
+					<Tabs.Trigger value={category} class="data-[state=active]:bg-secondary/10">
+						{category}
+					</Tabs.Trigger>
+				{/each}
+			</Tabs.List>
+		</Tabs.Root>
+	</div>
+
+	<!-- Grid Layout -->
+	<div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
 		{#each filteredItems as item}
 			<WorkCard {...item} />
 		{/each}
