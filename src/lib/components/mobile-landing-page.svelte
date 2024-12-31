@@ -2,7 +2,7 @@
 	import Button from '$lib/components/ui/button/button.svelte';
 
 	const cloudname = import.meta.env.VITE_CLOUDINARY_CLOUD_NAME;
-	const videoUrl = `https://res.cloudinary.com/${cloudname}/video/upload/v1735058342/unique-event-productions/banner-video.mp4`;
+	const videoUrl = `https://res.cloudinary.com/${cloudname}/video/upload/v1735058342/unique-event-productions/banner-video-1.mp4`;
 </script>
 
 <div class="flex min-h-full w-full flex-col lg:hidden">
