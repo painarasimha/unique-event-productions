@@ -3,7 +3,7 @@
 	import Chooseus from '$lib/components/about/chooseus.svelte';
 </script>
 
-<div class="min-h-screen">
+<div class="min-h-screen"> <!-- TODO (Amrith) Fix the entire layout of the About Us Page according to Figma-->
 	<!-- Hero Section -->
 	<section class="relative bg-background text-foreground">
 		<div class="container mx-auto px-8 py-8 md:px-14 md:py-14">

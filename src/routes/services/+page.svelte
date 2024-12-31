@@ -5,6 +5,7 @@
 	const cloudname = import.meta.env.VITE_CLOUDINARY_CLOUD_NAME;
 	const services = [
 		//TODO Change all the details and information of each services
+		//TODO Fix the Bento Grid Layout of the 2nd Box
 		{
 			id: 1,
 			title: 'Wedding Planner',
