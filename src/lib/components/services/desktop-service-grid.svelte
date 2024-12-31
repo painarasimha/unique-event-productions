@@ -1,5 +1,7 @@
 <script lang="ts">
-	import ServiceCard from './serviceCard.svelte';
+	import BentoGridItem from '../ui/BentoGrid/BentoGridItem.svelte';
+	import BentoGrid from '../ui/BentoGrid/BentoGrid.svelte';
+	import img3 from '$lib/assets/corporate.avif';
 
 	// Services array as prop from Parent component
 	export let services: {
@@ -8,39 +10,19 @@
 		shortDesc: string;
 		imageUrl: string;
 		link: string;
+		className: string;
 	}[];
 </script>
 
-<div class="container mx-auto px-4 py-6 hidden md:block">
-	<div class="grid grid-cols-6 grid-rows-6 gap-3 items-stretch">
-		<!-- Wedding Planner -->
-		<div class="col-span-4 row-span-2 items-stretch">
-			<ServiceCard service={services[0]} />
-		</div>
-
-		<!-- Concert & Live Shows -->
-		<div class="col-span-2 row-span-4 items-stretch">
-			<ServiceCard service={services[1]} />
-		</div>
-
-		<!-- Corporate Events -->
-		<div class="col-span-2 row-span-2">
-			<ServiceCard service={services[2]} />
-		</div>
-
-		<!-- Exhibition & Trade Shows -->
-		<div class="col-span-2 row-span-2">
-			<ServiceCard service={services[3]} />
-		</div>
-
-		<!-- Social Parties -->
-		<div class="col-span-3 row-span-2">
-			<ServiceCard service={services[4]} />
-		</div>
-
-		<!-- Festivals & Cultural Events -->
-		<div class="col-span-3 row-span-2">
-			<ServiceCard service={services[5]} />
-		</div>
-	</div>
-</div>
+<BentoGrid className="hidden md:grid max-w-5xl mx-auto md:auto-rows-[20rem]">
+	{#each services as item}
+		<BentoGridItem title={item.title} description={item.shortDesc} className={item.className}>
+			<img
+				src={img3}
+				alt={item.title}
+				slot="header"
+				class="] flex h-full min-h-[6rem] w-full flex-1 rounded-xl border border-border border-transparent object-cover"
+			/>
+		</BentoGridItem>
+	{/each}
+</BentoGrid>
