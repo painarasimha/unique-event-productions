@@ -4,6 +4,7 @@
 	import ServiceCard from '$lib/components/services/serviceCard.svelte';
 	const cloudname = import.meta.env.VITE_CLOUDINARY_CLOUD_NAME;
 	const services = [
+		//TODO Change all the details and information of each services
 		{
 			id: 1,
 			title: 'Wedding Planner',
