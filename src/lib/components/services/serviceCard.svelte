@@ -1,10 +1,10 @@
 <script lang="ts">
-	import img1 from '$lib/assets/wedding.avif';
-	import img2 from '$lib/assets/concerts.avif';
+	import CardBody from '../ui/ThreeDCardEffect/CardBody.svelte';
+	import CardContainer from '../ui/ThreeDCardEffect/CardContainer.svelte';
+	import CardItem from '../ui/ThreeDCardEffect/CardItem.svelte';
+
+	let isMouseEntered = false;
 	import img3 from '$lib/assets/corporate.avif';
-	import img4 from '$lib/assets/rade.avif';
-	import img5 from '$lib/assets/party.avif';
-	import img6 from '$lib/assets/festival.avif';
 	import { onMount } from 'svelte';
 
 	export let service: {
@@ -14,24 +14,26 @@
 		imageUrl: string;
 		link: string;
 	};
-
 </script>
 
-<div
-  class="overflow-hidden rounded-lg shadow-lg transform transition-transform duration-300 "
+<CardContainer
+	bind:isMouseEntered
+	className="transform overflow-hidden rounded-lg shadow-lg w-full transition-transform duration-300"
 >
-  <div class="relative h-full">
-    <div class="absolute inset-0 bg-white">
-      <img
-        src={img3} 
-        alt={service.title}
-        class="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
-      />
-    </div>
-    <div class="relative flex h-full flex-col justify-end bg-card/40 p-6 transition-colors hover:bg-card/50">
-      <h3 class="mb-2 text-2xl font-bold text-foreground">{service.title}</h3>
-      <p class="text-foreground/90">{service.shortDesc}</p>
-    </div>
-  </div>
-</div>
-
+	<CardBody className="relative h-full w-full">
+		<CardItem class="absolute inset-0 bg-black" {isMouseEntered}>
+			<img
+				src={img3}
+				alt={service.title}
+				class="h-full w-full object-cover opacity-50 transition-transform duration-300 hover:scale-105"
+			/>
+		</CardItem>
+		<CardItem
+			{isMouseEntered}
+			class="relative flex h-full flex-col justify-end bg-card/40 p-6 transition-colors hover:bg-card/50"
+		>
+			<h3 class="mb-2 text-2xl font-bold text-foreground">{service.title}</h3>
+			<p class="text-foreground/90">{service.shortDesc}</p>
+		</CardItem>
+	</CardBody>
+</CardContainer>

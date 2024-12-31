@@ -11,42 +11,48 @@
 			title: 'Wedding Planner',
 			shortDesc: 'Strategic consulting services for business growth',
 			imageUrl: ``,
-			link: '/service/1'
+			link: '/service/1',
+			className: 'col-span-2'
 		},
 		{
 			id: 2,
 			title: 'Concerts & Live Shows',
 			shortDesc: 'Digital transformation solutions',
 			imageUrl: ``,
-			link: '/service/2'
+			link: '/service/2',
+			className: 'col-span-1'
 		},
 		{
 			id: 3,
 			title: 'Corporate Events',
 			shortDesc: 'Custom software development',
 			imageUrl: ``,
-			link: '/service/3'
+			link: '/service/3',
+			className: 'col-span-1'
 		},
 		{
 			id: 4,
 			title: 'Exhibition & Trade Shows',
 			shortDesc: 'Cloud infrastructure management',
 			imageUrl: ``,
-			link: '/service/4'
+			link: '/service/4',
+			className: 'col-span-2'
 		},
 		{
 			id: 5,
 			title: 'Social Parties',
 			shortDesc: 'Data analytics and insights',
 			imageUrl: ``,
-			link: '/service/5'
+			link: '/service/5',
+			className: 'col-span-2'
 		},
 		{
 			id: 6,
 			title: 'Festival & Cultural Events',
 			shortDesc: 'Data analytics and insights',
 			imageUrl: ``,
-			link: '/service/6'
+			link: '/service/6',
+			className: 'col-span-1'
 		}
 	];
 </script>
