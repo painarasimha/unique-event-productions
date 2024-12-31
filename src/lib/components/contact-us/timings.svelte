@@ -11,13 +11,13 @@
   ];
 </script>
 
-<div class="bg-white rounded-lg shadow-md p-4 sm:p-6 lg:p-8">
-  <h3 class="text-lg font-semibold mb-4 sm:text-xl">Business Hours</h3>
-  <div class="space-y-2 sm:space-y-3">
+<div class="bg-gray-700/10 rounded-xl shadow-inner mb-4 shadow-gray-500/20 p-4 border-2 sm:p-6 lg:p-8">
+  <h3 class="text-lg font-sans font-medium mb-4 text-center md:font-semibold md:text-2xl">Business Hours</h3>
+  <div class="space-y-2 md:space-y-5">
     {#each businessHours as schedule}
-      <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center">
-        <span class="text-foreground text-sm sm:text-base">{schedule.days}</span>
-        <span class="font-medium text-sm sm:text-base">{schedule.hours}</span>
+      <div class="flex flex-col items-center ">
+        <span class="text-foreground font-medium text-sm md:text-lg">{schedule.days}</span>
+        <span class="font-medium text-sm md:text-base">{schedule.hours}</span>
       </div>
     {/each}
   </div>
