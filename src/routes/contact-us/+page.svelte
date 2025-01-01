@@ -10,7 +10,7 @@
 		{
 			icon: Phone,
 			name: 'Phone',
-			details: ['']
+			details: ['+91 97415 58494']
 		},
 		{
 			icon: Mail,

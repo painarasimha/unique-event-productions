@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Approach from '$lib/components/about/approach.svelte';
 	import Chooseus from '$lib/components/about/chooseus.svelte';
 </script>
