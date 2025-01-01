@@ -17,12 +17,8 @@
 <BentoGrid className="hidden md:grid max-w-5xl mx-auto md:auto-rows-[20rem]">
 	{#each services as item}
 		<BentoGridItem title={item.title} description={item.shortDesc} className={item.className}>
-			<img
-				src={img3}
-				alt={item.title}
-				slot="header"
-				class="] flex h-full min-h-[6rem] w-full flex-1 rounded-xl border border-border border-transparent object-cover"
-			/>
+				<img src={img3} alt={item.title} slot="header" 
+				class="flex h-full min-h-[6rem] w-full flex-1 rounded-xl border-border border-transparent object-cover">
 		</BentoGridItem>
 	{/each}
 </BentoGrid>
