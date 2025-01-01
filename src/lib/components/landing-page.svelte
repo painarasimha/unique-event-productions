@@ -20,10 +20,13 @@
 			</div>
 		</div>
 		<!-- Right Side Text SECTION -->
-		<div class="flex w-full flex-col items-center justify-center gap-4">
-			<h1 class="font-serif text-6xl font-bold text-primary">Unique Event Productions</h1>
-			<p class="text-lg">Turning Moments into Memories</p>
-			<Button>Learn More</Button>
+		<div class="flex flex-col w-full items-center justify-center gap-4">
+			<h1 class="font-serif text-6xl font-bold text-primary">Crafting Unforgettable Experiences</h1>
+			<div class="px-2 w-[500px] break-words">
+				At <span class="font-black text-primary">Unique Event Productions</span>, we bring your dreams
+				to life with precision, creativity & passion.
+			</div>
+			<Button variant="secondary">Know More</Button>
 		</div>
 	</div>
 
