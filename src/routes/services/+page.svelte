@@ -20,7 +20,7 @@
 			shortDesc: 'Digital transformation solutions',
 			imageUrl: ``,
 			link: '/service/2',
-			className: 'col-span-1'
+			className: 'col-span-1 row-span-2'
 		},
 		{
 			id: 3,
@@ -36,7 +36,7 @@
 			shortDesc: 'Cloud infrastructure management',
 			imageUrl: ``,
 			link: '/service/4',
-			className: 'col-span-2'
+			className: 'col-span-1'
 		},
 		{
 			id: 5,
@@ -44,7 +44,7 @@
 			shortDesc: 'Data analytics and insights',
 			imageUrl: ``,
 			link: '/service/5',
-			className: 'col-span-2'
+			className: 'col-span-1'
 		},
 		{
 			id: 6,
@@ -52,7 +52,7 @@
 			shortDesc: 'Data analytics and insights',
 			imageUrl: ``,
 			link: '/service/6',
-			className: 'col-span-1'
+			className: 'col-span-2'
 		}
 	];
 </script>
