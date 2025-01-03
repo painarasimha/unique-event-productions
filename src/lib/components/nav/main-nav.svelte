@@ -7,18 +7,15 @@
 </script>
 
 <div class="mr-4 hidden w-full justify-between md:flex">
-	<a href="/" class="mr-6 flex items-center space-x-2">
+	<a href="/" class="mr-6 flex items-center space-x-2 transition-transform duration-300 hover:animate-rotate360 hover:ease-out">
 		<img src={Logo} alt="logo-img" class="h-12 w-12">
 	</a>
 	<nav class="flex items-center gap-6 text-sm">
 		{#each docsConfig.mainNav as navItem}
 			<a
 				href={navItem.href}
-				class={cn(
-					'transition-colors hover:text-foreground/80',
-					page.url.pathname === navItem.href ? 'text-foreground' : 'text-foreground/60'
-				)}
-			>
+				class='transition-transform duration-300 hover:scale-110 after:absolute after:bottom-0 after:top-[18px] after:left-0 after:h-[5px] after:w-0 after:bg-gradient-to-r after:from-[#ffbf00] after:to-[#bf9b30] after:transition-all hover:after:w-full'
+			> <!-- TODO make the hover rounded and lower the speed of horizontal line-->
 				{navItem.title}
 			</a>
 		{/each}
