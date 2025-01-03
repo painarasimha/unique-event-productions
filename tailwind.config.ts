@@ -3,7 +3,7 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
 	darkMode: ["class"],
-	content: ["./src/**/*.{html,js,svelte,ts}"],
+	content: ["./src/**/*.{html,js,svelte,ts,css}"],
 	safelist: ["dark"],
 	theme: {
 		container: {
@@ -14,6 +14,37 @@ const config: Config = {
 			}
 		},
 		extend: {
+			animation: {
+				float: 'float 3s ease-in-out infinite',
+				'gradient-text': 'gradientText 3s linear infinite',
+				kenBurns: 'kenBurns 20s infinite',
+				rotate360: 'rotate360 0.3s ease'
+			},
+
+			keyframes: {
+				float: {
+					'0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' }
+				},
+				gradientText: {
+					'0%': { backgroundPosition: '0% 50%' },
+          '100%': { backgroundPosition: '100% 50%' }
+				},
+				particle: {
+          '0%': { transform: 'scale(1) translate(0, 0)', opacity: '1' },
+          '100%': { transform: 'scale(0) translate(var(--tx), var(--ty))', opacity: '0' }
+        },
+				kenBurns: {
+					'0%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.1)' },
+          '100%': { transform: 'scale(1)' }
+				},
+				rotate360: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' }
+        }
+			},
+
 			colors: {
 				border: "hsl(var(--border) / <alpha-value>)",
 				input: "hsl(var(--input) / <alpha-value>)",
@@ -47,7 +78,7 @@ const config: Config = {
 				card: {
 					DEFAULT: "hsl(var(--card) / <alpha-value>)",
 					foreground: "hsl(var(--card-foreground) / <alpha-value>)"
-				}
+				},
 			},
 			borderRadius: {
 				lg: "var(--radius)",
@@ -57,7 +88,7 @@ const config: Config = {
 			fontFamily: {
 				sans: ['Outfit Variable', 'sans-serif'],
 				serif: ['Playfair Display Variable', 'serif'],
-			}
+			},
 		}
 	},
 };
