@@ -69,7 +69,6 @@
 		"lucide-svelte": "^0.469.0",
 		"svelte-inview": "^4.0.4",
 		"svelte-motion": "^0.12.2",
-		"svelte-radix": "^2.0.1",
-		"vanilla-tilt": "^1.8.1"
+		"svelte-radix": "^2.0.1"
 	}
 }
