@@ -9,7 +9,7 @@
 	<section class="relative text-foreground" in:fade={{ duration: 800 }}>
 		<div class="container mx-auto px-8 py-8 md:px-14 md:py-14">
 			<h1
-				class="mx-auto mb-5 text-center font-serif text-2xl font-semibold text-primary md:text-5xl"
+				class="mx-auto mb-5 text-center font-serif text-2xl font-semibold text-primary md:text-5xl md:font-bold"
 				in:fly={{ y: -20, duration: 600 }}
 			>
 				About Us
