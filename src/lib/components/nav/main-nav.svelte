@@ -14,8 +14,8 @@
 		{#each docsConfig.mainNav as navItem}
 			<a
 				href={navItem.href}
-				class='transition-transform duration-300 hover:scale-110 after:absolute after:bottom-0 after:top-[18px] after:left-0 after:h-[5px] after:w-0 after:bg-gradient-to-r after:from-[#ffbf00] after:to-[#bf9b30] after:transition-all hover:after:w-full'
-			> <!-- TODO make the hover rounded and lower the speed of horizontal line-->
+				class='relative after:duration-700 after:ease-in-out transition-transform duration-300 hover:scale-110 after:absolute after:bottom-0 after:top-[18px] after:left-0 after:h-[5px] after:w-0 after:bg-gradient-to-r after:from-[#ffbf00] after:to-[#ffc800] after:rounded-full after:transition-all hover:after:w-full'
+			>
 				{navItem.title}
 			</a>
 		{/each}
