@@ -35,7 +35,9 @@
 	});
 </script>
 
-<span class="cursorFollower z-[999] rounded-full bg-primary" style="left: {xp}px; top: {yp}px;"
+<span
+	class="cursorFollower invisible z-[999] rounded-full bg-primary lg:visible"
+	style="left: {xp}px; top: {yp}px;"
 ></span>
 
 <style>
