@@ -1,12 +1,12 @@
 <script>
 	import { fade, fly } from 'svelte/transition';
-	import Button from '$lib/components/ui/button/button.svelte';
+	import { Mouse } from 'lucide-svelte';
 	import { baseUrl } from '$lib/utils.ts';
 
 	const videoUrl = `${baseUrl}/video/upload/v1735058342/unique-event-productions/banner-video-1.mp4`;
 </script>
 
-<div class="flex min-h-full w-full flex-col lg:hidden">
+<div class="relative flex min-h-full w-full flex-col overflow-hidden bg-black lg:hidden">
 	<!-- Hero Banner Video SECTION -->
 	<video
 		src={videoUrl}
@@ -14,26 +14,29 @@
 		loop
 		muted
 		autoplay
-		class="min-h-[50%] object-cover md:h-[50%]"
+		class="h-full scale-125 object-cover opacity-30"
 		in:fade={{ duration: 1000 }}
 	>
 		<track kind="captions" />
 	</video>
 
-	<!-- Texts SECTION -->
-	<div
-		class="flex h-full flex-col items-center justify-center gap-4 p-4 md:h-[40%]"
-		in:fly={{ y: 50, duration: 800 }}
-	>
-		<div class="text-center font-serif text-3xl" in:fade={{ duration: 800 }}>
+	<!-- Hero Title -->
+	<div class="absolute flex h-full items-center justify-center p-2">
+		<h1
+			class="text-center font-serif text-4xl font-semibold text-white"
+			in:fly={{ y: -50, duration: 1000 }}
+			out:fly={{ y: 50, duration: 500 }}
+		>
 			Crafting Unforgettable Experiences
-		</div>
-		<div class="px-2 text-center" in:fade={{ delay: 200, duration: 800 }}>
-			At <span class="font-black text-primary">Unique Event Productions</span>, we bring your dreams
-			to life with precision, creativity & passion.
-		</div>
-		<div in:fly={{ y: 20, duration: 500 }}>
-			<Button variant="secondary">Know More</Button>
-		</div>
+		</h1>
+	</div>
+
+	<!-- Mouse hover Icon -->
+	<div
+		class="absolute bottom-2 left-[50%] -translate-x-[50%]"
+		in:fly={{ y: 20, duration: 800, delay: 500 }}
+		out:fly={{ y: -20, duration: 500 }}
+	>
+		<Mouse class="h-8 w-8 text-white" />
 	</div>
 </div>
