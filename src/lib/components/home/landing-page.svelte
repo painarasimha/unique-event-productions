@@ -3,7 +3,7 @@
 	import { fadeSlideUp } from '$lib/animations.ts';
 	import { onMount } from 'svelte';
 	import { baseUrl } from '$lib/utils.ts';
-	import Button from './ui/button/button.svelte';
+	import Button from '../ui/button/button.svelte';
 	import { createEventDispatcher } from 'svelte';
 
 	const imgUrl = `${baseUrl}/image/upload/v1736612723/unique-event-productions/banner-img4.jpg`;
@@ -61,12 +61,14 @@
 	});
 </script>
 
-<div class="relative hidden min-h-full w-full flex-col gap-4 p-4 px-16 lg:flex">
-	<div class="absolute -top-[3.6rem] left-0 h-[calc(100dvh+3.6rem)] w-full bg-black"></div>
+<div
+	class="overflow- relative hidden h-[calc(100dvh-3.5rem)] w-full flex-col gap-4 p-4 px-16 lg:flex"
+>
+	<div class="pointer-events-none absolute -top-[3.6rem] left-0 h-[100dvh] w-full bg-black"></div>
 	<img
 		src={imgUrl}
 		alt="Event production company banner"
-		class="absolute -top-[3.6rem] left-0 h-[calc(100dvh+3.6rem)] w-full object-cover opacity-50"
+		class="absolute -top-[3.6rem] left-0 h-[100dvh] w-full overflow-y-hidden object-cover opacity-50"
 	/>
 
 	<!-- Main SECTION -->

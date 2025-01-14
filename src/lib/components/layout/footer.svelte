@@ -1,9 +1,8 @@
 <script>
-	export let className;
 	import { Facebook, Instagram, Twitter } from 'lucide-svelte';
 </script>
 
-<footer class={`${className} bg-black py-8 text-white`}>
+<footer class={` bg-black py-8 text-white`}>
 	<div class="mx-auto grid max-w-screen-xl grid-cols-1 gap-8 px-4 sm:grid-cols-2 lg:grid-cols-3">
 		<div class="space-y-4">
 			<h4 class="text-lg font-semibold">Contact Us</h4>
