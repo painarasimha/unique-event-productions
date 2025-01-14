@@ -12,5 +12,5 @@
 	<div class="flex min-h-[calc(100vh-3.5rem)] w-screen bg-background bg-opacity-0">
 		{@render children()}
 	</div>
-	<!-- <Footer /> -->
+	<Footer />
 </div>
