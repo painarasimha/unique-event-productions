@@ -3,7 +3,7 @@
 	import { fadeSlideUp } from '$lib/animations.ts';
 	import { onMount } from 'svelte';
 	import { baseUrl } from '$lib/utils.ts';
-	import Button from './ui/button/button.svelte';
+	import Button from '../ui/button/button.svelte';
 	import { createEventDispatcher } from 'svelte';
 
 	const imgUrl = `${baseUrl}/image/upload/v1736612723/unique-event-productions/banner-img4.jpg`;
@@ -62,24 +62,31 @@
 </script>
 
 <div
-	class="hidden min-h-full w-full flex-col gap-4 p-4 px-16 lg:flex"
-	style={`background-image: url('${imgUrl}'); background-size: cover; background-postion: center;`}
-	> <!-- TODO make the image fit correct-->
-	<div class="absolute inset-0 bg-black/20 z-0"></div>
+	class="overflow- relative hidden h-[calc(100dvh-3.5rem)] w-full flex-col gap-4 p-4 px-16 lg:flex"
+>
+	<div class="pointer-events-none absolute -top-[3.6rem] left-0 h-[100dvh] w-full bg-black"></div>
+	<img
+		src={imgUrl}
+		alt="Event production company banner"
+		class="absolute -top-[3.6rem] left-0 h-[100dvh] w-full overflow-y-hidden object-cover opacity-50"
+	/>
+
 	<!-- Main SECTION -->
-	<div class="flex h-full w-full gap-8 px-8 py-8 z-10">
+	<div class="z-10 flex h-full w-full gap-8 px-8 py-8">
 		<!-- Right Side Text SECTION -->
 		<div class="flex w-full flex-col items-center justify-center gap-4">
 			{#if visible}
 				<h1
 					class="animate-gradient-text font-serif text-8xl font-bold text-white"
-					in:fade={{ delay: 3 * 300 }}
+					in:fade={{ delay: 100 }}
 				>
 					Unique Event Productions
 				</h1>
-				<p class="text-2xl text-white font-medium" in:fade={{ delay: 800, duration: 600 }}>Turning Moments into Memories</p>
+				<p class="text-2xl font-medium text-white" in:fade={{ delay: 200, duration: 600 }}>
+					Turning Moments into Memories
+				</p>
 			{/if}
-			<div in:fly={{ y: 20, duration: 500 }}>
+			<div in:fly={{ y: 20, delay: 200 }}>
 				<Button
 					on:click={handleClick}
 					class="relative overflow-hidden rounded-lg bg-[#ffbf00] px-6 py-2 transition-all duration-300 hover:text-black hover:before:w-full
@@ -93,7 +100,7 @@
 
 	<!-- Bottom SECTION -->
 	<div
-		class="flex h-fit w-full p-5 z-10"
+		class="z-10 flex h-fit w-full p-5"
 		in:slide={{ duration: 1000 }}
 		style="animation: slideIn 0.5s ease-out {3 * 0.2}s forwards;"
 	>
