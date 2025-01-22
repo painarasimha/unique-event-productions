@@ -2,21 +2,22 @@
 	import * as Card from '$lib/components/ui/card/index.ts';
 </script>
 
-<section class="mx-auto max-w-2xl py-5 md:py-8">
+<section class="mx-auto max-w-4xl py-5 md:py-8">
 	<div class="container mx-auto">
-		<Card.Root class="border-2 bg-gray-700/10 shadow-inner shadow-gray-500/20">
-			<Card.Header class="p-2 text-center">
-				<Card.Title tag="h2" class="p-2 font-sans text-2xl font-medium md:text-4xl md:font-bold"
-					>Our Approach</Card.Title
-				>
-			</Card.Header>
-			<Card.Content class="mb-2 px-6 py-2">
-				<p class="mx-auto max-w-3xl font-sans text-sm text-card-foreground md:text-xl">
-					We believe every event tells a story. Our team of seasoned professionals combines local
-					cultural understanding with contemporary event management techniques to create experiences
-					that resonate with both tradition and modern sophistication.
-				</p>
-			</Card.Content>
-		</Card.Root>
+		<p class="mb-8 text-center font-serif text-2xl md:text-4xl">Our Approach</p>
+		<p class="text-left mb-8 font-sans text-sm md:text-xl">
+			At Unique Event Productions, our approach is defined by meticulous planning, innovative
+			solutions, and a deep commitment to personalization. We start by understanding your vision,
+			goals, and unique preferences, ensuring that every event we craft is as individual as you are.
+			Using a detail-driven process, we collaborate with you at every stage, combining your ideas
+			with our expertise to design a celebration that exceeds expectations.
+		</p>
+		<p class="text-left mb-8 font-sans text-sm md:text-xl">
+			What sets us apart is our ability to seamlessly manage the complexities of event planning
+			while keeping your experience stress-free. Our team leverages industry-leading tools, trusted
+			vendor partnerships, and cutting-edge trends to execute events flawlessly. From tailored
+			timelines to creative design concepts, we focus on delivering exceptional moments that
+			resonate with your guests and leave a lasting impression.
+		</p>
 	</div>
 </section>
