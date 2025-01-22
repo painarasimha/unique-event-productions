@@ -14,7 +14,7 @@
 		loop
 		muted
 		autoplay
-		class="h-full scale-125 object-cover opacity-30"
+		class="h-[calc(100dvh-3.5rem	)] scale-125 object-cover opacity-30"
 		in:fade={{ duration: 1000 }}
 	>
 		<track kind="captions" />

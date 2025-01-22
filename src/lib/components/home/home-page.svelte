@@ -5,7 +5,7 @@
 </script>
 
 <div class="flex w-full flex-col">
-	<MobileLandingPage />
+	<!-- <MobileLandingPage /> -->
 	<LandingPage />
 	<EventSection />
 </div>
