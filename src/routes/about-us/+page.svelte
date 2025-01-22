@@ -19,33 +19,18 @@
 				in:fade={{ delay: 200, duration: 800 }}
 			>
 				<p class="mb-8">
-					Founded with a passion for creativity and a dedication to excellence, Unique Event
-					Productions has established itself as a trusted leader in the event planning and event
-					management industry. Headquartered in Mangaluru, we proudly extend our expertise to
-					clients locally and globally, ensuring unforgettable experiences that bring your vision to
-					life.
+					At Unique Event Productions, we transform dreams into unforgettable experiences with
+					creativity, precision, and expertise. Based in Mangaluru, we serve clients locally and
+					globally, delivering extraordinary celebrations—from elegant weddings and grand corporate
+					galas to intimate parties and impactful non-profit events. Our full-service event
+					management covers every detail, including venue selection, décor design, entertainment,
+					and seamless coordination, ensuring your vision comes to life effortlessly.
 				</p>
 				<p class="mb-8">
-					At Unique Event Productions, we specialize in crafting exceptional events tailored to your
-					unique needs. Whether you're searching for wedding planners near me, corporate event
-					management, or expert party planners, our team transforms your ideas into reality with
-					precision and flair. From intimate weddings to large-scale celebrations and impactful
-					non-profit events, we deliver seamless event production that exceeds expectations.
-				</p>
-				<p class="mb-8">
-					Our talented team of designers, event planners,and production experts works
-					collaboratively to ensure every detail reflects your personal style and story. As a
-					full-service event management company, we handle everything from venue selection and décor
-					design to entertainment and flawless on-site coordination, offering the peace of mind you
-					deserve.
-				</p>
-				<p class="mb-8">
-					At the heart of Unique Event Productions is a dedication to creating events that are not
-					only visually stunning but also deeply meaningful. Whether planning an elegant wedding, a
-					grand corporate gala, or a lively party, we believe every celebration deserves to be as
-					extraordinary as the people behind it. With a proven track record of success, a
-					client-first philosophy, and innovative solutions, Unique Event Productions is your
-					trusted partner for creating events that are truly unforgettable.
+					Driven by a passion for storytelling, we craft events that are as meaningful as they are
+					visually stunning. Combining innovative solutions with a client-first philosophy, our
+					talented team collaborates with you to create personalized, memorable experiences. Choose
+					Unique Event Productions to make every moment as extraordinary as you.
 				</p>
 			</div>
 		</div>

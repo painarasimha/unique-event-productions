@@ -5,42 +5,32 @@
 <section class="mx-auto max-w-4xl py-5 md:py-8">
 	<div class="container mx-auto px-10">
 		<p class="mb-10 text-center font-serif text-2xl md:text-4xl">Why Choose Us?</p>
-		<p class="font-semibold font-serif mb-2 md:text-[24px]">Every Event Begins with Your Vision</p>
-		<p class="text-left mb-8 font-sans md:text-xl">
-			At Unique Event Productions, we believe that every event
-			begins with your unique vision. Our passion lies in transforming dreams into extraordinary
-			realities, weaving your story into every detail to create events that are not just memorable
-			but truly one-of-a-kind.
+		<p class="mb-2 font-serif font-semibold md:text-[24px]">Every Event Begins with Your Vision</p>
+		<p class="mb-8 text-left font-sans md:text-xl">
+			At Unique Event Productions, we believe every unforgettable event starts with your unique
+			vision. We transform dreams into extraordinary realities, weaving your story into every detail
+			to create events that are as memorable as they are one-of-a-kind.
 		</p>
-		<p class="font-semibold font-serif mb-2 md:text-[24px]">The Power of Understanding </p>
-		<p class="text-left mb-8 font-sans text-sm md:text-xl">
-			What sets us apart is our commitment to understanding you. We take
-			the time to listen and learn about your goals, preferences, and aspirations. By embracing your
-			vision, we ensure no detail is overlooked and every possibility is explored, resulting in an
-			event that reflects who you are and what you value most.
+		<p class="mb-2 font-serif font-semibold md:text-[24px]">The Power of Understanding</p>
+		<p class="mb-8 text-left font-sans text-sm md:text-xl">
+			What sets us apart is our commitment to understanding you. By listening to your goals,
+			preferences, and aspirations, we ensure no detail is overlooked. This personal touch results
+			in events that reflect your personality, values, and style.
 		</p>
-		<p class="font-semibold font-serif mb-2 md:text-[24px]">Where Creativity Meets Strategy </p>
-		<p class="text-left mb-8 font-sans text-sm md:text-xl">
-			At Unique Event Productions, we combine artistic creativity
-			with strategic planning to design events that are as intelligent as they are beautiful. From
-			conceptual discussions to detailed designs, our process is built to bring your vision to life
-			seamlessly. Every element, from décor and lighting to entertainment and ambiance, is crafted
-			with precision and flair.
+		<p class="mb-2 font-serif font-semibold md:text-[24px]">Where Creativity Meets Strategy</p>
+		<p class="mb-8 text-left font-sans text-sm md:text-xl">
+			Our team blends artistic creativity with strategic planning to design intelligent,
+			breathtaking events. From initial concepts to the finest details—décor, lighting,
+			entertainment, and ambiance—every element is meticulously crafted to bring your vision to life
+			seamlessly.
 		</p>
-		<p class="font-semibold font-serif mb-2 md:text-[24px]">Seamless Execution, Memorable Results</p>
-		<p class="text-left mb-8 font-sans text-sm md:text-xl">
-			Our dedication to flawless execution ensures your event
-			unfolds effortlessly. From behind-the-scenes logistics to the perfect finishing touches, our
-			team orchestrates every aspect with care and professionalism. Whether it's an intimate
-			gathering or a grand celebration, we make the extraordinary happen with ease.
+		<p class="mb-2 font-serif font-semibold md:text-[24px]">
+			Flawless Execution, Memorable Results
 		</p>
-		<p class="font-semibold font-serif mb-2 md:text-[24px]">Your Vision, Our Expertise</p>
-		<p class="text-left mb-8 font-sans text-sm md:text-xl">
-			From milestone celebrations to impactful corporate events, we are
-			dedicated to making your event a masterpiece. With a client-first philosophy, innovative
-			solutions, and an unwavering attention to detail, we ensure that every occasion is more than
-			just a success—it's unforgettable. Above all else, we are committed to elevate your vision and
-			transform your next event into an extraordinary experience.
+		<p class="mb-8 text-left font-sans text-sm md:text-xl">
+			With a focus on precision and professionalism, we ensure every event unfolds effortlessly.
+			Whether it’s an intimate gathering or a grand celebration, we manage all logistics behind the
+			scenes, delivering extraordinary experiences that leave a lasting impression.
 		</p>
 	</div>
 </section>
