@@ -30,7 +30,7 @@
 		}
 	},
 	"peerDependencies": {
-		"svelte": "^5.0.0"
+		"svelte": "^4.2.19"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^1.2.3",
@@ -50,7 +50,7 @@
 		"prettier-plugin-svelte": "^3.2.6",
 		"prettier-plugin-tailwindcss": "^0.6.5",
 		"publint": "^0.2.0",
-		"svelte": "^5.0.0",
+		"svelte": "^4.2.19",
 		"svelte-check": "^4.0.0",
 		"svelte-cloudinary": "^2.3.0",
 		"tailwind-merge": "^2.6.0",
