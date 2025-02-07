@@ -2,9 +2,10 @@ import { type ClassValue, clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 import { cubicOut } from 'svelte/easing';
 import type { TransitionConfig } from 'svelte/transition';
-import { PUBLIC_VITE_CLOUDINARY_CLOUD_NAME } from '$env/static/public';
 
-export const baseUrl = `https://res.cloudinary.com/${PUBLIC_VITE_CLOUDINARY_CLOUD_NAME}`;
+const CLOUDINARY_CLOUD_NAME = import.meta.env.VITE_CLOUDINARY_CLOUD_NAME;
+
+export const baseUrl = `https://res.cloudinary.com/${CLOUDINARY_CLOUD_NAME}`;
 
 export function cn(...inputs: ClassValue[]) {
 	return twMerge(clsx(inputs));
