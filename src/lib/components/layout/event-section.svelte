@@ -14,19 +14,13 @@
 		</h1>
 		<div class="h-12 w-[0.5px] rounded-full bg-black/50 sm:h-16"></div>
 		<p class="text-base sm:text-lg">
-			At Rafanelli Events, every <span class="font-semibold text-accent">celebration</span>
-			begins with your story. We expertly weave your narrative throughout every detail of your event,
-			creating an atmosphere that is both extraordinary and deeply personal.
+			At Unique Event Productions, every event begins with your story. We specialize in <span class="font-semibold text-accent">luxury event planning</span>, ensuring each celebration is a seamless blend of elegance, creativity, and personal touch.
 		</p>
 		<p class="text-base sm:text-lg">
-			<span class="font-semibold text-accent">Our approach</span> is one of partnership and precision.
-			We listen intently to capture the essence of who you are, what you aspire to be, and what matters
-			most to you. This understanding allows us to tailor every element, ensuring no detail is overlooked
-			and every possibility explored.
+			<span class="font-semibold text-accent">Our approach</span> is built on partnership and precision. We take the time to understand who you are, what you envision, and the moments that matter most to you. This deep connection allows us to design weddings, corporate events, social gatherings, and private parties that are not just visually stunning but also deeply meaningful.
 		</p>
 		<p class="text-base sm:text-lg">
-			Events at Rafanelli are not just beautiful; they are smart, strategically crafted to reflect
-			you.
+			At <span class="font-semibold text-accent">Unique Event Productions</span>, we don't just create events—we craft experiences that leave lasting impressions. Let's bring your vision to life!
 		</p>
 
 		<!-- Button Section -->
