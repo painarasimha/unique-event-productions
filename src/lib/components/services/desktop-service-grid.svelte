@@ -14,14 +14,14 @@
 	}[];
 </script>
 
-<BentoGrid className="hidden md:grid max-w-5xl mx-auto md:auto-rows-[20rem]">
+<BentoGrid className="hidden md:grid md:auto-rows-[20rem] mx-auto max-w-5xl">
 	{#each services as item}
 		<BentoGridItem title={item.title} description={item.shortDesc} className={item.className}>
 			<img
-				src={img3}
+				src={item.imageUrl}
 				alt={item.title}
 				slot="header"
-				class="flex h-full min-h-[6rem] w-full flex-1 rounded-xl border border-border border-transparent object-cover"
+				class="flex flex-1 border border-transparent border-border rounded-xl w-full h-full min-h-[6rem] object-cover"
 			/>
 		</BentoGridItem>
 	{/each}
