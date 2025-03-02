@@ -10,7 +10,7 @@
 		{
 			icon: Phone,
 			name: 'Phone',
-			details: ['+91 97415 58494']
+			details: ['+91 99026 64066']
 		},
 		{
 			icon: Mail,
@@ -20,14 +20,14 @@
 		{
 			icon: MapPin,
 			name: 'Location',
-			details: ['123 Event Street', 'New York, NY 10001']
+			details: ['Nr Marpalli Railway Bridge, Kukkikatte, Udupi, 576101']
 		}
 	];
 </script>
 
-<div class="container mx-auto px-6 py-6 md:px-8 md:py-12">
-	<h1 class="mb-5 text-center text-2xl font-semibold font-serif text-primary md:mb-10 md:font-bold md:text-5xl">Contact Us</h1>
-	<div class="mb-5 grid grid-cols-1 gap-4 sm:mb-12 md:grid-cols-3 sm:gap-6 ">
+<div class="mx-auto px-6 md:px-8 py-6 md:py-12 container">
+	<h1 class="mb-5 md:mb-10 font-serif font-semibold md:font-bold text-primary text-2xl md:text-5xl text-center">Contact Us</h1>
+	<div class="gap-4 sm:gap-6 grid grid-cols-1 md:grid-cols-3 mb-5 sm:mb-12">
 		{#each contactInfo as info}
 			<ContactCard {info} />
 		{/each}
