@@ -5,17 +5,17 @@
   export let category: string;
 </script>
 
-<Card.Root class="overflow-hidden group hover:shadow-lg transition-all duration-300">
+<Card.Root class="group hover:shadow-lg overflow-hidden transition-all duration-300">
   <Card.Content class="p-0">
     <div class="relative">
       <img 
       src={imageUrl} 
       alt={category} 
-      class="w-full object-cover transition-transform duration-300 group-hover:scale-105" 
+      class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300" 
       />
-      <div class="absolute inset-0 bg-background/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-        <div class="text-card-foreground text-center p-4">
-          <span class="mt-2 inline-block px-3 py-1 bg-white/20 rounded-full text-sm">
+      <div class="absolute inset-0 flex justify-center items-center bg-background/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <div class="p-4 text-card-foreground text-center">
+          <span class="inline-block bg-white/20 mt-2 px-3 py-1 rounded-full text-sm">
             {category}
           </span>
         </div>
