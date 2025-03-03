@@ -2,7 +2,7 @@
 	import { fade, fly, slide } from 'svelte/transition';
 	import { onMount } from 'svelte';
 	import Button from '../ui/button/button.svelte';
-
+	import { goto } from '$app/navigation';
 	import { createEventDispatcher } from 'svelte';
 
 	const imgUrl = 'https://res.cloudinary.com/db56favi8/image/upload/v1737995012/unique-event-productions/banner-img9.jpg';
@@ -19,7 +19,10 @@
 	function handleClick(e: MouseEvent) {
 		isClicked = true;
 		createParticles(e);
-		setTimeout(() => (isClicked = false), 200);
+		setTimeout(() => {
+			isClicked = false;
+			goto('/services');
+		}, 200);
 		dispatch('click');
 	}
 
