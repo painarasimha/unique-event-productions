@@ -56,7 +56,7 @@
 	];
 </script>
 
-<div class="flex flex-col bg-gray-200/70 mx-auto py-6 border max-w-screen-xl md:container">
+<div class="flex flex-col bg-gray-200/70 mx-auto py-6 border max-w-screen-xl w-full md:container">
 	<h1 class="mx-auto mb-8 font-serif text-2xl md:text-5xl text-center">Services</h1>
 	<MobileServiceGrid {services} />
 	<DesktopServiceGrid {services} />
