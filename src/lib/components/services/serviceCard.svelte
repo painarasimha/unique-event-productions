@@ -4,7 +4,6 @@
 	import CardItem from '../ui/ThreeDCardEffect/CardItem.svelte';
 
 	let isMouseEntered = false;
-	import { onMount } from 'svelte';
 
 	export let service: {
 		id: number;
@@ -15,26 +14,24 @@
 	};
 </script>
 
-<div class="w-full h-full"> <!-- Wrapper div for consistent sizing -->
+<a href={service.link} class="block w-full">
 	<CardContainer
-	bind:isMouseEntered
-	className="shadow-lg rounded-lg w-full h-full overflow-hidden transition-transform duration-300 transform"
+		bind:isMouseEntered
+		className="w-full shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-[1.02]"
 	>
-	<CardBody className="relative w-full h-full">
-		<CardItem class="absolute inset-0 bg-black" {isMouseEntered}>
-			<img
-			src={service.imageUrl}
-			alt={service.title}
-			class="opacity-50 w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-			/>
-		</CardItem>
-		<CardItem
-			{isMouseEntered}
-			class="relative flex flex-col justify-end bg-card/40 hover:bg-card/50 p-6 h-full transition-colors"
-		>
-		<h3 class="mb-1 font-bold text-foreground text-2xl">{service.title}</h3>
-		<p class="text-foreground/90">{service.shortDesc}</p>
-	</CardItem>
-</CardBody>
-</CardContainer>
-</div>
+		<CardBody className="relative w-full">
+			<CardItem class="w-full h-52">
+				<img
+					src={service.imageUrl}
+					alt={service.title}
+					class="w-full h-full object-cover rounded-lg"
+				/>
+			</CardItem>
+
+			<CardItem class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-black/20 p-4 text-white">
+				<h3 class="text-lg font-bold">{service.title}</h3>
+				<p class="text-sm">{service.shortDesc}</p>
+			</CardItem>
+		</CardBody>
+	</CardContainer>
+</a>
