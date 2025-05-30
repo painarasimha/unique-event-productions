@@ -7,7 +7,6 @@
 	import FAQSection from '$lib/components/contact-us/faq-section.svelte';
 
 	const contactInfo = [
-		// TODO Update the information
 		{
 			icon: Phone,
 			name: 'Phone',

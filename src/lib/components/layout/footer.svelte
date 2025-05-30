@@ -1,4 +1,5 @@
 <script>
+	// TODO Use error free icons
 	import { Facebook, Instagram, Twitter } from 'lucide-svelte';
 </script>
 
@@ -8,7 +9,6 @@
 	>
 		<div class="md:text-md text-sm md:space-y-4">
 			<h4 class="text-lg font-semibold">Contact Us</h4>
-			<!-- TODO (Narasimha) : Change mail id and phone number -->
 			<p>Email: unique.event.productions2020@gmail.com</p>
 			<p>Phone: +91 99026 64066</p>
 		</div>
@@ -16,6 +16,7 @@
 		<div class="space-y-4">
 			<h4 class="text-lg font-semibold">Follow Us</h4>
 			<div class="flex space-x-4">
+				<!-- TODO Add facebook URL -->
 				<a
 					href="/"
 					class="rounded-full border border-gray-400 p-2 hover:text-gray-400"

@@ -3,7 +3,6 @@
 	import type { WorkItem } from '$lib/types/our-work.ts';
 
 	const workItems: WorkItem[] = [
-		//TODO Add in proper images
 		{
 			id: '1',
 			imageUrl:

@@ -2,9 +2,8 @@
 	import DesktopServiceGrid from '$lib/components/services/desktop-service-grid.svelte';
 	import MobileServiceGrid from '$lib/components/services/mobile-service-grid.svelte';
 	import ServiceCard from '$lib/components/services/serviceCard.svelte';
+
 	const services = [
-		//TODO Change all the details and information of each services
-		//TODO Fix the Bento Grid Layout of the 2nd Box & use tilt js
 		{
 			id: 1,
 			title: 'Wedding Planner',
