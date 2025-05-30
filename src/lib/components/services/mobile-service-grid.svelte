@@ -12,6 +12,6 @@
 
 <div class="flex flex-col gap-6 px-4 pb-6 md:hidden">
 	{#each services as service (service.id)}
-		<ServiceCard {service}/>
+		<ServiceCard {service} />
 	{/each}
 </div>

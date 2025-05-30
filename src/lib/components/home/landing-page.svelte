@@ -5,7 +5,8 @@
 	import { goto } from '$app/navigation';
 	import { createEventDispatcher } from 'svelte';
 
-	const imgUrl = 'https://res.cloudinary.com/db56favi8/image/upload/v1737995012/unique-event-productions/banner-img9.jpg';
+	const imgUrl =
+		'https://res.cloudinary.com/db56favi8/image/upload/v1737995012/unique-event-productions/banner-img9.jpg';
 
 	let clients = 0;
 	let events = 0;
@@ -14,26 +15,14 @@
 
 	let visible = false;
 	let isClicked = false;
-	let particles: Array<{ x: number; y: number; angle: number }> = [];
 
-	function handleClick(e: MouseEvent) {
+	function handleClick() {
 		isClicked = true;
-		createParticles(e);
 		setTimeout(() => {
 			isClicked = false;
 			goto('/services');
 		}, 200);
 		dispatch('click');
-	}
-
-	function createParticles(e: MouseEvent) {
-		const rect = (e.target as HTMLElement).getBoundingClientRect();
-		particles = Array.from({ length: 10 }, (_, i) => ({
-			x: e.clientX - rect.left,
-			y: e.clientY - rect.top,
-			angle: (i * 36 * Math.PI) / 180
-		}));
-		setTimeout(() => (particles = []), 1000);
 	}
 
 	const incrementNumber = (target: number, setter: (value: number) => void, duration: number) => {
@@ -62,29 +51,29 @@
 	});
 </script>
 
-<div class="relative flex flex-col gap-4 p-4 lg:px-16 w-full h-[calc(100dvh-3.5rem)]">
-	<div class="-top-[3.6rem] left-0 absolute bg-black w-full h-[100dvh] pointer-events-none"></div>
+<div class="relative flex h-[calc(100dvh-3.5rem)] w-full flex-col gap-4 p-4 lg:px-16">
+	<div class="pointer-events-none absolute -top-[3.6rem] left-0 h-[100dvh] w-full bg-black"></div>
 	<img
 		src={imgUrl}
 		alt="Event production company banner"
-		class="-top-[3.6rem] left-0 absolute opacity-50 w-full h-[100dvh] object-cover"
+		class="absolute -top-[3.6rem] left-0 h-[100dvh] w-full object-cover opacity-50"
 	/>
 
 	<!-- Main Section -->
 	<div
-		class="z-10 flex flex-wrap justify-center items-center gap-4 lg:gap-8 px-4 lg:px-8 py-8 w-full h-full"
+		class="z-10 flex h-full w-full flex-wrap items-center justify-center gap-4 px-4 py-8 lg:gap-8 lg:px-8"
 	>
 		<!-- Text Section -->
-		<div class="flex flex-col justify-center items-center gap-4 w-full md:w-2/3 text-center">
+		<div class="flex w-full flex-col items-center justify-center gap-4 text-center md:w-2/3">
 			{#if visible}
 				<h1
-					class="font-serif font-bold text-white text-4xl sm:text-5xl lg:text-8xl animate-gradient-text"
+					class="animate-gradient-text font-serif text-4xl font-bold text-white sm:text-5xl lg:text-8xl"
 					in:fade={{ delay: 100 }}
 				>
 					Unique Event Productions
 				</h1>
 				<p
-					class="font-medium text-white text-lg sm:text-xl lg:text-2xl"
+					class="text-lg font-medium text-white sm:text-xl lg:text-2xl"
 					in:fade={{ delay: 200, duration: 600 }}
 				>
 					Turning Moments into Memories
@@ -104,7 +93,7 @@
 
 	<!-- Bottom Section -->
 	<div
-		class="z-10 flex flex-wrap justify-center gap-2 p-4 sm:text-lg md:text-xl lg:text-2xl text-center"
+		class="z-10 flex flex-wrap justify-center gap-2 p-4 text-center sm:text-lg md:text-xl lg:text-2xl"
 		in:slide={{ duration: 1000 }}
 	>
 		<p class="w-full font-semibold text-white">

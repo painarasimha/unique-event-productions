@@ -1,7 +1,3 @@
-<script lang="ts">
-	import * as Card from '$lib/components/ui/card/index.ts';
-</script>
-
 <section class="max-w-4xl px-4 py-5 md:px-8 md:py-8">
 	<p class="mb-10 text-center font-serif text-2xl md:text-4xl">Why Choose Us?</p>
 	<p class="mb-2 font-serif font-semibold md:text-[24px]">Every Event Begins with Your Vision</p>

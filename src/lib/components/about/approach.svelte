@@ -1,7 +1,3 @@
-<script lang="ts">
-	import * as Card from '$lib/components/ui/card/index.ts';
-</script>
-
 <section class="max-w-4xl px-4 py-5 md:px-8 md:py-8">
 	<p class="mb-8 text-center font-serif text-2xl md:text-4xl">Our Approach</p>
 	<p class="mb-8 text-justify font-sans text-sm md:text-xl">

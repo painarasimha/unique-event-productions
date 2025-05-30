@@ -12,7 +12,7 @@
 
 	let ref: HTMLDivElement;
 
-	$: isMouseEntered, handleAnimations();
+	$: if (isMouseEntered !== undefined) handleAnimations();
 
 	const handleAnimations = () => {
 		if (!ref) return;

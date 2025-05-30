@@ -8,7 +8,7 @@ declare global {
 		// interface PageState {}
 		// interface Platform {}
 
-		interface Env{
+		interface Env {
 			VITE_CLOUDINARY_CLOUD_NAME: string;
 		}
 	}

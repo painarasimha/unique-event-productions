@@ -3,7 +3,6 @@
 	import { Menu } from 'lucide-svelte';
 	import Logo from '$lib/assets/Primary Logo.png';
 	import * as Sheet from '../ui/sheet/index.ts';
-	import Button from '../ui/button/button.svelte';
 	import ScrollArea from '../ui/scroll-area/scroll-area.svelte';
 	import { docsConfig } from '$lib/config/docs.ts';
 

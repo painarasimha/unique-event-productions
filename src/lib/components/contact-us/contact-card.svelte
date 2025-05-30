@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Phone, Mail, MapPin, type Icon as IconType } from 'lucide-svelte';
+	import { type Icon as IconType } from 'lucide-svelte';
 
 	type ContactInfo = {
 		icon: typeof IconType;

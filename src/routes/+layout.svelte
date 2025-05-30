@@ -1,7 +1,6 @@
 <script lang="ts">
 	import '../app.css';
 	import SiteHeader from '$lib/components/layout/site-header.svelte';
-	import MouseFollower from '$lib/components/layout/mouse-follower.svelte';
 	import Footer from '$lib/components/layout/footer.svelte';
 	let { children } = $props();
 </script>

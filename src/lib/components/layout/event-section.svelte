@@ -62,7 +62,6 @@
 			</Button>
 		</div>
 
-		<!-- TODO 'Our Work' Section -->
 		<div
 			class="flex flex-col items-end gap-4 border-b-2 py-8 text-right lg:h-full lg:w-[50%] lg:items-center lg:justify-between lg:border-l-2 lg:border-t-2 lg:px-4 lg:text-center"
 		>
