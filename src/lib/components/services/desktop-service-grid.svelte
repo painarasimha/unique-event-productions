@@ -21,7 +21,7 @@
 				src={item.imageUrl}
 				alt={item.title}
 				slot="header"
-				class="flex flex-1 border border-transparent border-border rounded-xl w-full h-full min-h-[6rem] object-cover"
+				class="flex h-full min-h-[6rem] w-full flex-1 rounded-xl border border-border border-transparent object-cover"
 			/>
 		</BentoGridItem>
 	{/each}
