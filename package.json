@@ -3,7 +3,7 @@
 	"version": "0.0.1",
 	"engines": {
 		"node": "20"
-	 },
+	},
 	"scripts": {
 		"dev": "vite dev --host",
 		"build": "vite build && npm run package",
@@ -70,6 +70,7 @@
 		"@tailwindcss/forms": "^0.5.9",
 		"@tailwindcss/typography": "^0.5.15",
 		"lucide-svelte": "^0.469.0",
+		"nodemailer": "^7.0.3",
 		"svelte-inview": "^4.0.4",
 		"svelte-motion": "^0.12.2",
 		"svelte-radix": "^2.0.1"
