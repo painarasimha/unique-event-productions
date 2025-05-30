@@ -1,9 +1,7 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
 	import { Phone, Mail, MapPin } from 'lucide-svelte';
 
 	import ContactCard from '$lib/components/contact-us/contact-card.svelte';
-	import Timings from '$lib/components/contact-us/timings.svelte';
 	import FAQSection from '$lib/components/contact-us/faq-section.svelte';
 
 	const contactInfo = [

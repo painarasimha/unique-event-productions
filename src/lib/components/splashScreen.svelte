@@ -1,6 +1,5 @@
 <script lang="ts">
-	export let show: Boolean = true;
-	import { fade } from 'svelte/transition';
+	export let show: boolean = true;
 </script>
 
 <div class="fixed inset-0 z-50 flex items-center justify-center bg-black">

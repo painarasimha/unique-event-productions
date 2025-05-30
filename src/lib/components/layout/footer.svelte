@@ -1,6 +1,6 @@
 <script>
 	// TODO Use error free icons
-	import { Facebook, Instagram, Twitter } from 'lucide-svelte';
+	import { Facebook, Instagram } from 'lucide-svelte';
 </script>
 
 <footer class={` bg-black py-8 text-white`}>

@@ -1,7 +1,6 @@
 <script lang="ts">
 	import BentoGridItem from '../ui/BentoGrid/BentoGridItem.svelte';
 	import BentoGrid from '../ui/BentoGrid/BentoGrid.svelte';
-	import img3 from '$lib/assets/corporate.avif';
 
 	// Services array as prop from Parent component
 	export let services: {

@@ -1,7 +1,6 @@
 <script>
 	import DesktopServiceGrid from '$lib/components/services/desktop-service-grid.svelte';
 	import MobileServiceGrid from '$lib/components/services/mobile-service-grid.svelte';
-	import ServiceCard from '$lib/components/services/serviceCard.svelte';
 
 	const services = [
 		{

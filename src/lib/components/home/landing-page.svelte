@@ -15,26 +15,14 @@
 
 	let visible = false;
 	let isClicked = false;
-	let particles: Array<{ x: number; y: number; angle: number }> = [];
 
-	function handleClick(e: MouseEvent) {
+	function handleClick() {
 		isClicked = true;
-		createParticles(e);
 		setTimeout(() => {
 			isClicked = false;
 			goto('/services');
 		}, 200);
 		dispatch('click');
-	}
-
-	function createParticles(e: MouseEvent) {
-		const rect = (e.target as HTMLElement).getBoundingClientRect();
-		particles = Array.from({ length: 10 }, (_, i) => ({
-			x: e.clientX - rect.left,
-			y: e.clientY - rect.top,
-			angle: (i * 36 * Math.PI) / 180
-		}));
-		setTimeout(() => (particles = []), 1000);
 	}
 
 	const incrementNumber = (target: number, setter: (value: number) => void, duration: number) => {
