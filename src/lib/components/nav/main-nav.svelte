@@ -1,8 +1,5 @@
 <script lang="ts">
-	import { page } from '$app/state';
 	import Logo from '$lib/assets/Primary Logo.png';
-	/* import { Globe } from 'lucide-svelte'; */
-	import { cn } from '$lib/utils.js';
 	import { docsConfig } from '$lib/config/docs.ts';
 </script>
 

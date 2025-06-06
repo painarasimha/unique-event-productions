@@ -1,6 +1,6 @@
 // src/routes/api/contact/+server.ts
-import type { RequestHandler } from '@sveltejs/kit'
-import nodemailer from 'nodemailer'
+import type { RequestHandler } from '@sveltejs/kit';
+import nodemailer from 'nodemailer';
 import { GMAIL_USER } from '$env/static/private';
 import { GMAIL_PASS } from '$env/static/private';
 

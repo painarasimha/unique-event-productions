@@ -2,11 +2,11 @@
 	import WorkCard from './work-card.svelte';
 	import type { WorkItem } from '$lib/types/our-work.ts';
 	/* import Button from '../ui/button/button.svelte'; */
-/* 	import * as Select from '$lib/components/ui/select/index.ts'; */
+	/* 	import * as Select from '$lib/components/ui/select/index.ts'; */
 	import * as Tabs from '$lib/components/ui/tabs/index.ts';
 
 	export let items: WorkItem[];
-	
+
 	let selectedCategory: string | undefined = 'All';
 
 	// Get unique categories
@@ -20,7 +20,10 @@
 <div class="container mx-auto px-4 py-8">
 	<!-- Mobile Layout-(Select Component) -->
 	<div class="mb-8 w-full max-w-[250px] md:hidden">
-		<select bind:value={selectedCategory} class="w-full px-3 py-2 border rounded-md bg-background text-foreground">
+		<select
+			bind:value={selectedCategory}
+			class="w-full rounded-md border bg-background px-3 py-2 text-foreground"
+		>
 			{#each categories as category}
 				<option value={category}>{category}</option>
 			{/each}
