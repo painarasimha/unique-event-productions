@@ -17,7 +17,7 @@
 		},
 		{
 			title: 'Flawless Execution, Memorable Results',
-			body: "With a focus on precision and professionalism, we ensure every event unfolds effortlessly. Whether it's an intimate gathering or a grand celebration, we manage all logistics behind the scenes, delivering extraordinary experiences that leave a lasting impression.",
+			body: 'With a focus on precision and professionalism, we ensure every event unfolds effortlessly. Whether it’s an intimate gathering or a grand celebration, we manage all logistics behind the scenes, delivering extraordinary experiences that leave a lasting impression.',
 			img: 'https://res.cloudinary.com/db56favi8/image/upload/v1740913810/unique-event-productions/concert2.jpg'
 		}
 	];
