@@ -31,6 +31,7 @@
 		{#each categories as category}
 			<button
 				type="button"
+				aria-pressed={selectedCategory === category}
 				class="relative pb-1 text-sm transition-colors after:absolute after:bottom-0 after:left-0 after:h-px after:bg-primary after:transition-all after:duration-300 {selectedCategory ===
 				category
 					? 'text-foreground after:w-full'
