@@ -1,16 +1,15 @@
 <script lang="ts">
-	import ServiceCard from './serviceCard.svelte';
+	import ServiceCard from './service-card.svelte';
 
 	export let services: {
 		id: number;
 		title: string;
 		shortDesc: string;
 		imageUrl: string;
-		link: string;
 	}[];
 </script>
 
-<div class="flex flex-col gap-6 px-4 pb-6 md:hidden">
+<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
 	{#each services as service (service.id)}
 		<ServiceCard {service} />
 	{/each}
