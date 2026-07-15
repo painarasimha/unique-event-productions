@@ -1,5 +1,5 @@
-@import '@fontsource-variable/playfair-display';
-@import '@fontsource-variable/outfit';
+@import '@fontsource-variable/fraunces';
+@import '@fontsource-variable/instrument-sans';
 
 @tailwind base;
 @tailwind components;
@@ -7,36 +7,36 @@
 
 @layer base {
 	:root {
-		--background: 0 0% 100%;
-		--foreground: 240 10% 3.9%;
+		--background: 30 25% 97%;
+		--foreground: 20 15% 12%;
 
-		--muted: 240 4.8% 95.9%;
-		--muted-foreground: 240 3.8% 46.1%;
+		--muted: 30 10% 92%;
+		--muted-foreground: 25 8% 45%;
 
-		--popover: 0 0% 100%;
-		--popover-foreground: 240 10% 3.9%;
+		--popover: 30 25% 97%;
+		--popover-foreground: 20 15% 12%;
 
 		--card: 0 0% 100%;
-		--card-foreground: 240 10% 3.9%;
+		--card-foreground: 20 15% 12%;
 
-		--border: 240 5.9% 90%;
-		--input: 240 5.9% 90%;
+		--border: 30 10% 88%;
+		--input: 30 10% 88%;
 
-		--primary: 45 100% 50%;
-		--primary-foreground: 0 0% 98%;
+		--primary: 38 65% 48%;
+		--primary-foreground: 20 15% 12%;
 
-		--secondary: 0 0% 0%;
-		--secondary-foreground: 240 5.9% 10%;
+		--secondary: 20 15% 14%;
+		--secondary-foreground: 30 25% 97%;
 
-		--accent: 355 77% 52%;
-		--accent-foreground: 240 5.9% 10%;
+		--accent: 38 65% 48%;
+		--accent-foreground: 30 25% 97%;
 
 		--destructive: 0 72.2% 50.6%;
 		--destructive-foreground: 0 0% 98%;
 
-		--ring: 240 10% 3.9%;
+		--ring: 38 65% 48%;
 
-		--radius: 0.5rem;
+		--radius: 0.25rem;
 	}
 
 	.dark {
@@ -72,26 +72,26 @@
 }
 
 @layer base {
-	/* outfit-latin-wght-normal */
+	/* instrument-sans-latin-wght-normal */
 	@font-face {
-		font-family: 'Outfit Variable';
+		font-family: 'Instrument Sans Variable';
 		font-style: normal;
 		font-display: swap;
-		font-weight: 100 900;
-		src: url(@fontsource-variable/outfit/files/outfit-latin-wght-normal.woff2)
+		font-weight: 400 700;
+		src: url(@fontsource-variable/instrument-sans/files/instrument-sans-latin-wght-normal.woff2)
 			format('woff2-variations');
 		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304,
 			U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF,
 			U+FFFD;
 	}
 
-	/* playfair-display-latin-wght-normal */
+	/* fraunces-latin-wght-normal */
 	@font-face {
-		font-family: 'Playfair Display Variable';
+		font-family: 'Fraunces Variable';
 		font-style: normal;
 		font-display: swap;
-		font-weight: 400 900;
-		src: url(@fontsource-variable/playfair-display/files/playfair-display-latin-wght-normal.woff2)
+		font-weight: 100 900;
+		src: url(@fontsource-variable/fraunces/files/fraunces-latin-wght-normal.woff2)
 			format('woff2-variations');
 		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304,
 			U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF,
