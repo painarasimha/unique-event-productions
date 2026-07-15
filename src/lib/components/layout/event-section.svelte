@@ -1,84 +1,85 @@
 <script>
 	import { goto } from '$app/navigation';
 	import Button from '../ui/button/button.svelte';
+	import RevealSection from '../ui/reveal-section.svelte';
+
+	const offerImg =
+		'https://res.cloudinary.com/db56favi8/image/upload/v1740913810/unique-event-productions/concert1.jpg';
+	const workImg =
+		'https://res.cloudinary.com/db56favi8/image/upload/v1740907753/unique-event-productions/Wedding4.jpg';
 </script>
 
-<section class="flex w-full flex-col items-center bg-gray-100 py-6 sm:py-10">
-	<div class="flex w-[90%] flex-col items-center space-y-6 text-center lg:max-w-3xl">
-		<!-- Original Section -->
-		<h2 class="sm:text-md text-sm font-medium uppercase tracking-wide text-muted-foreground">
-			Our Promise to You
-		</h2>
-		<h1 class="font-serif text-2xl sm:text-3xl md:text-4xl">
-			WE CRAFT<br /> UNFORGETTABLE <br />CELEBRATIONS
-		</h1>
-		<div class="h-12 w-[0.5px] rounded-full bg-black/50 sm:h-16"></div>
-		<p class="text-base sm:text-lg">
-			At Unique Event Productions, every event begins with your story. We specialize in <span
-				class="font-semibold text-accent">luxury event planning</span
-			>, ensuring each celebration is a seamless blend of elegance, creativity, and personal touch.
-		</p>
-		<p class="text-base sm:text-lg">
-			<span class="font-semibold text-accent">Our approach</span> is built on partnership and precision.
-			We take the time to understand who you are, what you envision, and the moments that matter most
-			to you. This deep connection allows us to design weddings, corporate events, social gatherings,
-			and private parties that are not just visually stunning but also deeply meaningful.
-		</p>
-		<p class="text-base sm:text-lg">
-			At <span class="font-semibold text-accent">Unique Event Productions</span>, we don't just
-			create events—we craft experiences that leave lasting impressions. Let's bring your vision to
-			life!
-		</p>
-
-		<!-- Button Section -->
-		<div class="mt-4 sm:mt-6">
-			<Button
-				variant="outline"
-				size="lg"
-				class="rounded-lg border border-accent px-4 py-2 text-sm text-accent transition-colors hover:bg-accent hover:text-background sm:px-6 sm:py-3 sm:text-base"
-				on:click={() => goto('/about-us')}
-			>
-				Discover Who We Are
-			</Button>
-		</div>
-	</div>
-
-	<!-- 'What We Offer' Section -->
-	<div class="my-8 w-[90%] lg:flex lg:w-[80%]">
-		<div
-			class="flex flex-col items-start gap-4 border-b-2 border-t-2 py-8 text-left lg:w-[50%] lg:items-center lg:justify-between lg:px-4 lg:text-center"
-		>
-			<h2 class="sm:text-md text-sm font-medium uppercase tracking-wide text-muted-foreground">
-				What We Offer
+<section class="w-full bg-background py-20 sm:py-28">
+	<RevealSection class="mx-auto grid w-[90%] max-w-6xl gap-12 lg:grid-cols-[1fr_1.2fr] lg:gap-20">
+		<div>
+			<h2 class="text-sm font-medium uppercase tracking-wide text-muted-foreground">
+				Our Promise to You
 			</h2>
-			<h1 class="font-serif text-2xl sm:text-3xl md:text-4xl">Let us dazzle and inspire you.</h1>
-			<Button
-				variant="outline"
-				size="lg"
-				class="rounded-lg border border-foreground px-4 py-2 text-sm text-foreground transition-colors hover:bg-foreground hover:text-background sm:px-6 sm:py-3 sm:text-base"
-				on:click={() => goto('/services')}
-			>
-				What We Offer
-			</Button>
+			<p class="mt-4 font-serif text-3xl leading-tight sm:text-4xl md:text-5xl">
+				We craft unforgettable celebrations.
+			</p>
 		</div>
+		<div class="flex flex-col gap-6">
+			<p class="text-base leading-relaxed sm:text-lg">
+				At Unique Event Productions, every event begins with your story. We specialize in
+				<span class="font-medium text-accent">luxury event planning</span>, ensuring each
+				celebration is a seamless blend of elegance, creativity, and personal touch.
+			</p>
+			<p class="text-base leading-relaxed sm:text-lg">
+				<span class="font-medium text-accent">Our approach</span> is built on partnership and precision.
+				We take the time to understand who you are, what you envision, and the moments that matter
+				most to you. This deep connection allows us to design weddings, corporate events, social gatherings,
+				and private parties that are not just visually stunning but also deeply meaningful.
+			</p>
+			<p class="text-base leading-relaxed sm:text-lg">
+				At <span class="font-medium text-accent">Unique Event Productions</span>, we don't just create
+				events—we craft experiences that leave lasting impressions. Let's bring your vision to life!
+			</p>
+			<div class="mt-2">
+				<Button
+					variant="outline"
+					class="rounded-sm border-foreground/30 px-6 py-5 text-sm text-foreground hover:bg-foreground hover:text-background"
+					on:click={() => goto('/about-us')}
+				>
+					Discover Who We Are
+				</Button>
+			</div>
+		</div>
+	</RevealSection>
 
-		<div
-			class="flex flex-col items-end gap-4 border-b-2 py-8 text-right lg:h-full lg:w-[50%] lg:items-center lg:justify-between lg:border-l-2 lg:border-t-2 lg:px-4 lg:text-center"
+	<RevealSection class="mx-auto mt-20 grid w-[90%] max-w-6xl gap-6 sm:mt-28 md:grid-cols-2">
+		<a
+			href="/services"
+			class="group relative flex h-80 flex-col justify-end overflow-hidden rounded-sm p-8"
 		>
-			<h2 class="sm:text-md text-sm font-medium uppercase tracking-wide text-muted-foreground">
-				Our Work
-			</h2>
-			<h1 class="font-serif text-2xl sm:text-3xl md:text-4xl">
-				Events we have conducted and made memorable.
-			</h1>
-			<Button
-				variant="outline"
-				size="lg"
-				class="rounded-lg border border-foreground px-4 py-2 text-sm text-foreground transition-colors hover:bg-foreground hover:text-background sm:px-6 sm:py-3 sm:text-base"
-				on:click={() => goto('/our-work')}
-			>
-				Our Work
-			</Button>
-		</div>
-	</div>
+			<img
+				src={offerImg}
+				alt="What we offer"
+				class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+			/>
+			<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div>
+			<div class="relative z-10 text-white">
+				<h3 class="text-sm font-medium uppercase tracking-wide text-white/70">What We Offer</h3>
+				<p class="mt-2 font-serif text-2xl sm:text-3xl">Let us dazzle and inspire you.</p>
+			</div>
+		</a>
+
+		<a
+			href="/our-work"
+			class="group relative flex h-80 flex-col justify-end overflow-hidden rounded-sm p-8"
+		>
+			<img
+				src={workImg}
+				alt="Our work"
+				class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+			/>
+			<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div>
+			<div class="relative z-10 text-white">
+				<h3 class="text-sm font-medium uppercase tracking-wide text-white/70">Our Work</h3>
+				<p class="mt-2 font-serif text-2xl sm:text-3xl">
+					Events we have conducted and made memorable.
+				</p>
+			</div>
+		</a>
+	</RevealSection>
 </section>
