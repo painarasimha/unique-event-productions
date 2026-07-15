@@ -14,15 +14,10 @@ const config: Config = {
 		},
 		extend: {
 			animation: {
-				'gradient-text': 'gradientText 3s linear infinite',
 				kenBurns: 'kenBurns 20s ease-in-out infinite'
 			},
 
 			keyframes: {
-				gradientText: {
-					'0%': { backgroundPosition: '0% 50%' },
-					'100%': { backgroundPosition: '100% 50%' }
-				},
 				kenBurns: {
 					'0%': { transform: 'scale(1)' },
 					'50%': { transform: 'scale(1.1)' },

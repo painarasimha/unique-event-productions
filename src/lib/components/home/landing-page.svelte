@@ -14,14 +14,9 @@
 	const dispatch = createEventDispatcher();
 
 	let visible = false;
-	let isClicked = false;
 
 	function handleClick() {
-		isClicked = true;
-		setTimeout(() => {
-			isClicked = false;
-			goto('/services');
-		}, 200);
+		goto('/services');
 		dispatch('click');
 	}
 
@@ -51,53 +46,46 @@
 	});
 </script>
 
-<div class="relative flex h-[calc(100dvh-3.5rem)] w-full flex-col gap-4 p-4 lg:px-16">
-	<div class="pointer-events-none absolute -top-[3.6rem] left-0 h-[100dvh] w-full bg-black"></div>
+<div class="relative flex h-[calc(100dvh-4rem)] w-full flex-col justify-end overflow-hidden">
 	<img
 		src={imgUrl}
 		alt="Event production company banner"
-		class="absolute -top-[3.6rem] left-0 h-[100dvh] w-full object-cover opacity-50"
+		class="animate-kenBurns absolute inset-0 h-full w-full object-cover"
 	/>
+	<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
 
-	<!-- Main Section -->
-	<div
-		class="z-10 flex h-full w-full flex-wrap items-center justify-center gap-4 px-4 py-8 lg:gap-8 lg:px-8"
-	>
-		<!-- Text Section -->
-		<div class="flex w-full flex-col items-center justify-center gap-4 text-center md:w-2/3">
-			{#if visible}
-				<h1
-					class="animate-gradient-text font-serif text-4xl font-bold text-white sm:text-5xl lg:text-8xl"
-					in:fade={{ delay: 100 }}
-				>
-					Unique Event Productions
-				</h1>
-				<p
-					class="text-lg font-medium text-white sm:text-xl lg:text-2xl"
-					in:fade={{ delay: 200, duration: 600 }}
-				>
-					Turning Moments into Memories
-				</p>
-			{/if}
-			<div in:fly={{ y: 20, delay: 200 }}>
-				<Button
-					on:click={handleClick}
-					class="relative overflow-hidden rounded-lg bg-[#ffbf00] px-6 py-4 text-sm transition-all duration-300 hover:text-black hover:before:w-full sm:px-6 sm:py-[1.4rem] sm:text-base lg:text-lg
-	{isClicked ? 'scale-95' : 'scale-100'}"
-				>
-					<span>Learn More</span>
-				</Button>
-			</div>
+	<div class="relative z-10 flex flex-1 flex-col items-center justify-center gap-6 px-4 text-center">
+		{#if visible}
+			<h1
+				class="font-serif text-4xl font-medium text-white sm:text-5xl lg:text-7xl"
+				in:fade={{ delay: 100 }}
+			>
+				Unique Event Productions
+			</h1>
+			<p
+				class="text-lg text-white/90 sm:text-xl lg:text-2xl"
+				in:fade={{ delay: 200, duration: 600 }}
+			>
+				Turning Moments into Memories
+			</p>
+		{/if}
+		<div in:fly={{ y: 20, delay: 200 }}>
+			<Button
+				on:click={handleClick}
+				class="rounded-sm bg-primary px-8 py-6 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90 sm:text-base"
+			>
+				Learn More
+			</Button>
 		</div>
 	</div>
 
-	<!-- Bottom Section -->
 	<div
-		class="z-10 flex flex-wrap justify-center gap-2 p-4 text-center sm:text-lg md:text-xl lg:text-2xl"
+		class="relative z-10 flex flex-wrap justify-center gap-2 px-4 pb-10 text-center sm:text-lg md:text-xl"
 		in:slide={{ duration: 1000 }}
 	>
-		<p class="w-full font-semibold text-white">
-			{clients}+ Happy Clients | {events}+ Events Planned | {experience}+ Years of Experience
+		<p class="w-full font-sans font-medium text-white">
+			{clients}+ Happy Clients &nbsp;|&nbsp; {events}+ Events Planned &nbsp;|&nbsp; {experience}+ Years
+			of Experience
 		</p>
 	</div>
 </div>
