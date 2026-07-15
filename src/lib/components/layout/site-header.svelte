@@ -23,11 +23,13 @@
 </script>
 
 <header
-	class={`sticky top-0 z-50 w-full border-b border-border/40 transition-colors duration-300 ${
-		path === '/' && !scrolled ? 'bg-transparent text-white' : 'bg-white text-black'
+	class={`sticky top-0 z-50 w-full transition-colors duration-300 ${
+		path === '/' && !scrolled
+			? 'border-b border-transparent bg-transparent text-white'
+			: 'border-b border-border bg-background text-foreground'
 	}`}
 >
-	<div class="flex h-14 max-w-screen-2xl items-center md:container">
+	<div class="flex h-16 max-w-screen-2xl items-center md:container">
 		<MainNav />
 		<MobileNav />
 	</div>

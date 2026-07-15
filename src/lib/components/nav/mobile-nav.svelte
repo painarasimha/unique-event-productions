@@ -15,15 +15,15 @@
 
 	<Sheet.Root bind:open>
 		<Sheet.Trigger>
-			<Menu class="h-7 w-7 rounded-full border-2 p-1" />
+			<Menu class="h-6 w-6" />
 		</Sheet.Trigger>
 		<Sheet.Content side="right" class="pr-0">
 			<MobileLink href="/" class="flex items-center" bind:open>
 				<img src={Logo} alt="logo-img" class="mr-3 h-7 w-7" />
-				<span class="font-bold">Unique Event Productions</span>
+				<span class="font-serif text-lg">Unique Event Productions</span>
 			</MobileLink>
 			<ScrollArea orientation="both" class="my-4 h-[calc(100vh-8rem)] pb-10 pl-6">
-				<div class="flex flex-col space-y-3">
+				<div class="flex flex-col space-y-4 font-sans">
 					{#each docsConfig.mainNav as navItem, index (navItem + index.toString())}
 						{#if navItem.href}
 							<MobileLink href={navItem.href} bind:open class="text-foreground">

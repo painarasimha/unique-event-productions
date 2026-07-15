@@ -15,8 +15,7 @@ const config: Config = {
 		extend: {
 			animation: {
 				'gradient-text': 'gradientText 3s linear infinite',
-				kenBurns: 'kenBurns 20s ease-in-out infinite',
-				rotate360: 'rotate360 0.3s ease'
+				kenBurns: 'kenBurns 20s ease-in-out infinite'
 			},
 
 			keyframes: {
@@ -28,10 +27,6 @@ const config: Config = {
 					'0%': { transform: 'scale(1)' },
 					'50%': { transform: 'scale(1.1)' },
 					'100%': { transform: 'scale(1)' }
-				},
-				rotate360: {
-					'0%': { transform: 'rotate(0deg)' },
-					'100%': { transform: 'rotate(360deg)' }
 				}
 			},
 
