@@ -11,21 +11,16 @@
 </script>
 
 <div
-	class="flex flex-col items-center rounded-xl border-2 bg-gray-700/10 p-4 shadow-inner shadow-gray-500/20 transition-all hover:shadow-lg sm:p-6"
+	class="flex flex-col items-center rounded-sm border border-border p-6 text-center transition-colors hover:border-primary/50"
 >
-	<svelte:component
-		this={info.icon}
-		class="mb-2 h-6 w-6 text-center text-primary md:mb-4 md:h-8 md:w-8"
-	/>
-	<h3 class="mb-2 text-center font-sans text-lg font-medium md:text-2xl md:font-semibold">
-		{info.name}
-	</h3>
-	<div class="flex w-full flex-col items-center">
+	<svelte:component this={info.icon} class="mb-3 h-6 w-6 text-primary" />
+	<h3 class="mb-2 font-serif text-lg">{info.name}</h3>
+	<div class="flex w-full flex-col items-center gap-1">
 		{#each info.details as detail}
 			{#if info.name.toLowerCase().includes('phone')}
 				<a
 					href="tel:{detail.replace(/\D/g, '')}"
-					class="md:text-md max-w-full overflow-hidden break-words text-center text-[12px] text-foreground transition-colors hover:text-primary md:text-sm"
+					class="break-words text-sm text-muted-foreground transition-colors hover:text-primary"
 				>
 					{detail}
 				</a>
@@ -36,16 +31,12 @@
 					href="https://mail.google.com/mail/?view=cm&fs=1&to={detail}"
 					target="_blank"
 					rel="noopener noreferrer"
-					class="md:text-md max-w-full overflow-hidden break-words text-center text-[12px] text-foreground transition-colors hover:text-primary md:text-sm"
+					class="break-words text-sm text-muted-foreground transition-colors hover:text-primary"
 				>
 					{detail}
 				</a>
 			{:else}
-				<p
-					class="md:text-md max-w-full overflow-hidden break-words text-center text-[12px] text-foreground md:text-sm"
-				>
-					{detail}
-				</p>
+				<p class="break-words text-sm text-muted-foreground">{detail}</p>
 			{/if}
 		{/each}
 	</div>

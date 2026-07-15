@@ -12,16 +12,14 @@
 </script>
 
 <div
-	class="mb-4 rounded-xl border-2 bg-gray-700/10 p-4 shadow-inner shadow-gray-500/20 sm:p-6 lg:p-8"
+	class="flex flex-col items-center rounded-sm border border-border p-6 text-center transition-colors hover:border-primary/50"
 >
-	<h3 class="mb-4 text-center font-sans text-lg font-medium md:text-2xl md:font-semibold">
-		Business Hours
-	</h3>
-	<div class="space-y-2 md:space-y-5">
+	<h3 class="mb-3 font-serif text-lg">Business Hours</h3>
+	<div class="flex w-full flex-col items-center gap-2">
 		{#each businessHours as schedule}
 			<div class="flex flex-col items-center">
-				<span class="text-sm font-medium text-foreground md:text-lg">{schedule.days}</span>
-				<span class="text-sm font-medium md:text-base">{schedule.hours}</span>
+				<span class="text-sm text-foreground">{schedule.days}</span>
+				<span class="text-sm text-muted-foreground">{schedule.hours}</span>
 			</div>
 		{/each}
 	</div>
