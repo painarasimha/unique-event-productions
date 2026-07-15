@@ -10,9 +10,7 @@
 	$: categories = ['All', ...new Set(items.map((item) => item.category))];
 
 	$: filteredItems =
-		selectedCategory === 'All'
-			? items
-			: items.filter((item) => item.category === selectedCategory);
+		selectedCategory === 'All' ? items : items.filter((item) => item.category === selectedCategory);
 </script>
 
 <div class="mx-auto max-w-6xl px-4">

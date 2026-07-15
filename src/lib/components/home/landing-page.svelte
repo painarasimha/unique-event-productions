@@ -50,11 +50,13 @@
 	<img
 		src={imgUrl}
 		alt="Event production company banner"
-		class="animate-kenBurns absolute inset-0 h-full w-full object-cover"
+		class="absolute inset-0 h-full w-full animate-kenBurns object-cover"
 	/>
 	<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
 
-	<div class="relative z-10 flex flex-1 flex-col items-center justify-center gap-6 px-4 text-center">
+	<div
+		class="relative z-10 flex flex-1 flex-col items-center justify-center gap-6 px-4 text-center"
+	>
 		{#if visible}
 			<h1
 				class="font-serif text-4xl font-medium text-white sm:text-5xl lg:text-7xl"
@@ -84,8 +86,8 @@
 		in:slide={{ duration: 1000 }}
 	>
 		<p class="w-full font-sans font-medium text-white">
-			{clients}+ Happy Clients &nbsp;|&nbsp; {events}+ Events Planned &nbsp;|&nbsp; {experience}+ Years
-			of Experience
+			{clients}+ Happy Clients &nbsp;|&nbsp; {events}+ Events Planned &nbsp;|&nbsp; {experience}+
+			Years of Experience
 		</p>
 	</div>
 </div>

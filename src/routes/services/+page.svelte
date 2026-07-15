@@ -6,7 +6,8 @@
 		{
 			id: 1,
 			title: 'Wedding Planner',
-			shortDesc: 'From saat pheras to grand celebrations—crafted with culture, love, and perfection',
+			shortDesc:
+				'From saat pheras to grand celebrations—crafted with culture, love, and perfection',
 			imageUrl:
 				'https://res.cloudinary.com/db56favi8/image/upload/v1740907500/unique-event-productions/wedding2.jpg'
 		},

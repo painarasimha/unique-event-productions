@@ -27,13 +27,14 @@
 			</p>
 			<p class="text-base leading-relaxed sm:text-lg">
 				<span class="font-medium text-accent">Our approach</span> is built on partnership and precision.
-				We take the time to understand who you are, what you envision, and the moments that matter
-				most to you. This deep connection allows us to design weddings, corporate events, social gatherings,
+				We take the time to understand who you are, what you envision, and the moments that matter most
+				to you. This deep connection allows us to design weddings, corporate events, social gatherings,
 				and private parties that are not just visually stunning but also deeply meaningful.
 			</p>
 			<p class="text-base leading-relaxed sm:text-lg">
-				At <span class="font-medium text-accent">Unique Event Productions</span>, we don't just create
-				events—we craft experiences that leave lasting impressions. Let's bring your vision to life!
+				At <span class="font-medium text-accent">Unique Event Productions</span>, we don't just
+				create events—we craft experiences that leave lasting impressions. Let's bring your vision
+				to life!
 			</p>
 			<div class="mt-2">
 				<Button
@@ -57,7 +58,9 @@
 				alt="What we offer"
 				class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
 			/>
-			<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div>
+			<div
+				class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"
+			></div>
 			<div class="relative z-10 text-white">
 				<h3 class="text-sm font-medium uppercase tracking-wide text-white/70">What We Offer</h3>
 				<p class="mt-2 font-serif text-2xl sm:text-3xl">Let us dazzle and inspire you.</p>
@@ -73,7 +76,9 @@
 				alt="Our work"
 				class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
 			/>
-			<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div>
+			<div
+				class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"
+			></div>
 			<div class="relative z-10 text-white">
 				<h3 class="text-sm font-medium uppercase tracking-wide text-white/70">Our Work</h3>
 				<p class="mt-2 font-serif text-2xl sm:text-3xl">
