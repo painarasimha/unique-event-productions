@@ -1,28 +1,26 @@
 <script lang="ts">
 	import WorkCard from './work-card.svelte';
+	import RevealSection from '$lib/components/ui/reveal-section.svelte';
 	import type { WorkItem } from '$lib/types/our-work.ts';
-	/* import Button from '../ui/button/button.svelte'; */
-	/* 	import * as Select from '$lib/components/ui/select/index.ts'; */
-	import * as Tabs from '$lib/components/ui/tabs/index.ts';
 
 	export let items: WorkItem[];
 
 	let selectedCategory: string | undefined = 'All';
 
-	// Get unique categories
 	$: categories = ['All', ...new Set(items.map((item) => item.category))];
 
-	// Filtered items based on selected category
 	$: filteredItems =
-		selectedCategory === 'All' ? items : items.filter((item) => item.category === selectedCategory);
+		selectedCategory === 'All'
+			? items
+			: items.filter((item) => item.category === selectedCategory);
 </script>
 
-<div class="container mx-auto px-4 py-8">
-	<!-- Mobile Layout-(Select Component) -->
-	<div class="mb-8 w-full max-w-[250px] md:hidden">
+<div class="mx-auto max-w-6xl px-4">
+	<!-- Mobile filter -->
+	<div class="mb-10 w-full max-w-[220px] md:hidden">
 		<select
 			bind:value={selectedCategory}
-			class="w-full rounded-md border bg-background px-3 py-2 text-foreground"
+			class="w-full rounded-sm border border-border bg-background px-3 py-2 text-sm text-foreground"
 		>
 			{#each categories as category}
 				<option value={category}>{category}</option>
@@ -30,27 +28,26 @@
 		</select>
 	</div>
 
-	<!-- Desktop Layout-(Tabs Component)-->
-	<div class="hidden place-self-end md:block">
-		<Tabs.Root
-			value={selectedCategory}
-			onValueChange={(value) => (selectedCategory = value)}
-			class="w-full"
-		>
-			<Tabs.List class="mb-8 flex h-auto flex-wrap bg-background/30">
-				{#each categories as category}
-					<Tabs.Trigger value={category} class="data-[state=active]:bg-secondary/10">
-						{category}
-					</Tabs.Trigger>
-				{/each}
-			</Tabs.List>
-		</Tabs.Root>
-	</div>
-
-	<!-- Grid Layout -->
-	<div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-		{#each filteredItems as item}
-			<WorkCard {...item} />
+	<!-- Desktop filter -->
+	<div class="mb-10 hidden justify-end gap-8 md:flex">
+		{#each categories as category}
+			<button
+				type="button"
+				class="relative pb-1 text-sm transition-colors after:absolute after:bottom-0 after:left-0 after:h-px after:bg-primary after:transition-all after:duration-300 {selectedCategory ===
+				category
+					? 'text-foreground after:w-full'
+					: 'text-muted-foreground after:w-0 hover:text-foreground'}"
+				on:click={() => (selectedCategory = category)}
+			>
+				{category}
+			</button>
 		{/each}
 	</div>
+
+	<!-- Masonry grid -->
+	<RevealSection class="columns-1 gap-6 sm:columns-2 lg:columns-3">
+		{#each filteredItems as item (item.id)}
+			<WorkCard {...item} />
+		{/each}
+	</RevealSection>
 </div>
