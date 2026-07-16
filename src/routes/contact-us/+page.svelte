@@ -23,29 +23,6 @@
 			details: ['Nr Marpalli Railway Bridge, Kukkikatte, Udupi, 576101']
 		}
 	];
-
-	let form = {
-		name: '',
-		email: '',
-		message: ''
-	};
-
-	let status: string = '';
-
-	async function handleSubmit() {
-		const res = await fetch('/api/contact', {
-			method: 'POST',
-			headers: { 'Content-Type': 'application/json' },
-			body: JSON.stringify(form)
-		});
-
-		if (res.ok) {
-			status = 'Your message has been sent!';
-			form = { name: '', email: '', message: '' };
-		} else {
-			status = 'Something went wrong. Please try again later.';
-		}
-	}
 </script>
 
 <div class="mx-auto max-w-5xl px-4 py-20 sm:py-28">
@@ -58,59 +35,6 @@
 			{/each}
 			<Timings />
 		</div>
-	</RevealSection>
-
-	<RevealSection>
-		<form
-			on:submit|preventDefault={handleSubmit}
-			class="mx-auto mb-16 max-w-2xl space-y-4 rounded-sm border border-border p-6 md:p-8"
-		>
-			<h2 class="text-center font-serif text-2xl">Send Us a Message</h2>
-
-			<div class="flex flex-col space-y-2">
-				<label for="name" class="text-sm font-medium">Your Name</label>
-				<input
-					bind:value={form.name}
-					id="name"
-					type="text"
-					required
-					class="rounded-sm border border-border bg-background p-2 text-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
-				/>
-			</div>
-
-			<div class="flex flex-col space-y-2">
-				<label for="email" class="text-sm font-medium">Your Email</label>
-				<input
-					bind:value={form.email}
-					id="email"
-					type="email"
-					required
-					class="rounded-sm border border-border bg-background p-2 text-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
-				/>
-			</div>
-
-			<div class="flex flex-col space-y-2">
-				<label for="message" class="text-sm font-medium">Message</label>
-				<textarea
-					bind:value={form.message}
-					id="message"
-					required
-					rows="5"
-					class="rounded-sm border border-border bg-background p-2 text-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
-				></textarea>
-			</div>
-
-			<button
-				type="submit"
-				class="rounded-sm bg-primary px-6 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
-			>
-				Send Message
-			</button>
-
-			{#if status}
-				<p class="mt-2 text-center text-sm text-green-700">{status}</p>
-			{/if}
-		</form>
 	</RevealSection>
 
 	<RevealSection>
