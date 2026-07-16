@@ -1,1 +1,1 @@
-## Unique Event Productions - Event Management
+## Unique Event Productions - Event
